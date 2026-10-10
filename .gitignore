@@ -1,0 +1,16 @@
+# Lago de datos generado por el pipeline (se reconstruye con run_pipeline.py)
+datalake/
+logs/
+bigdata/salidas/
+spark-warehouse/
+metastore_db/
+derby.log
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Power BI: caché local y configuración del usuario
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix.bak
+# Resultados de ejecución locales (los finales se versionan explícitamente)
+experimento/resultados/*.png
