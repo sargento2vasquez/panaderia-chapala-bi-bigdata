@@ -1,0 +1,46 @@
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "ventas", "modo": "csv", "filas": 7982, "segundos": 12.526, "estado": "OK", "fecha_hora": "2026-10-11T02:41:33"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "items_venta", "modo": "csv", "filas": 16075, "segundos": 1.898, "estado": "OK", "fecha_hora": "2026-10-11T02:41:35"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "variantes_producto", "modo": "csv", "filas": 20, "segundos": 1.577, "estado": "OK", "fecha_hora": "2026-10-11T02:41:36"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "productos", "modo": "csv", "filas": 16, "segundos": 1.077, "estado": "OK", "fecha_hora": "2026-10-11T02:41:37"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "categorias", "modo": "csv", "filas": 7, "segundos": 0.967, "estado": "OK", "fecha_hora": "2026-10-11T02:41:38"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "unidades", "modo": "csv", "filas": 7, "segundos": 1.729, "estado": "OK", "fecha_hora": "2026-10-11T02:41:40"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "clientes", "modo": "csv", "filas": 6, "segundos": 2.367, "estado": "OK", "fecha_hora": "2026-10-11T02:41:42"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "metodos_pago", "modo": "csv", "filas": 5, "segundos": 1.197, "estado": "OK", "fecha_hora": "2026-10-11T02:41:44"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "proveedores", "modo": "csv", "filas": 6, "segundos": 0.805, "estado": "OK", "fecha_hora": "2026-10-11T02:41:44"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "compras", "modo": "csv", "filas": 32, "segundos": 0.866, "estado": "OK", "fecha_hora": "2026-10-11T02:41:45"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "items_compra", "modo": "csv", "filas": 124, "segundos": 1.05, "estado": "OK", "fecha_hora": "2026-10-11T02:41:46"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "producciones", "modo": "csv", "filas": 826, "segundos": 1.452, "estado": "OK", "fecha_hora": "2026-10-11T02:41:48"}
+{"ejecucion_id": "20261011_024120", "etapa": "ingesta", "tabla": "consumo_insumos", "modo": "csv", "filas": 3371, "segundos": 0.792, "estado": "OK", "fecha_hora": "2026-10-11T02:41:49"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "ventas", "filas": 7982, "segundos": 3.081, "estado": "OK", "fecha_hora": "2026-10-11T02:41:52"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "items_venta", "filas": 16075, "segundos": 2.694, "estado": "OK", "fecha_hora": "2026-10-11T02:41:54"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "variantes_producto", "filas": 20, "segundos": 2.14, "estado": "OK", "fecha_hora": "2026-10-11T02:41:57"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "productos", "filas": 16, "segundos": 1.317, "estado": "OK", "fecha_hora": "2026-10-11T02:41:58"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "categorias", "filas": 7, "segundos": 0.886, "estado": "OK", "fecha_hora": "2026-10-11T02:41:59"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "unidades", "filas": 7, "segundos": 0.859, "estado": "OK", "fecha_hora": "2026-10-11T02:42:00"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "clientes", "filas": 6, "segundos": 1.16, "estado": "OK", "fecha_hora": "2026-10-11T02:42:01"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "metodos_pago", "filas": 5, "segundos": 0.773, "estado": "OK", "fecha_hora": "2026-10-11T02:42:02"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "proveedores", "filas": 6, "segundos": 0.847, "estado": "OK", "fecha_hora": "2026-10-11T02:42:02"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "compras", "filas": 32, "segundos": 1.101, "estado": "OK", "fecha_hora": "2026-10-11T02:42:04"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "items_compra", "filas": 124, "segundos": 0.97, "estado": "OK", "fecha_hora": "2026-10-11T02:42:05"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "producciones", "filas": 826, "segundos": 1.111, "estado": "OK", "fecha_hora": "2026-10-11T02:42:06"}
+{"ejecucion_id": "20261011_024120", "etapa": "plata", "tabla": "consumo_insumos", "filas": 3371, "segundos": 1.176, "estado": "OK", "fecha_hora": "2026-10-11T02:42:07"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "dim_fecha", "particiones": "", "filas": 365, "segundos": 0.905, "estado": "OK", "fecha_hora": "2026-10-11T02:42:14"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "dim_producto", "particiones": "", "filas": 20, "segundos": 1.759, "estado": "OK", "fecha_hora": "2026-10-11T02:42:15"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "dim_cliente", "particiones": "", "filas": 7, "segundos": 2.57, "estado": "OK", "fecha_hora": "2026-10-11T02:42:18"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "dim_metodo_pago", "particiones": "", "filas": 6, "segundos": 0.773, "estado": "OK", "fecha_hora": "2026-10-11T02:42:19"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "dim_proveedor", "particiones": "", "filas": 6, "segundos": 0.667, "estado": "OK", "fecha_hora": "2026-10-11T02:42:19"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "fact_ventas", "particiones": "anio,mes", "filas": 16075, "segundos": 5.442, "estado": "OK", "fecha_hora": "2026-10-11T02:42:25"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "fact_produccion", "particiones": "anio,mes", "filas": 826, "segundos": 1.517, "estado": "OK", "fecha_hora": "2026-10-11T02:42:26"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "fact_compras", "particiones": "anio", "filas": 124, "segundos": 1.795, "estado": "OK", "fecha_hora": "2026-10-11T02:42:28"}
+{"ejecucion_id": "20261011_024120", "etapa": "oro", "tabla": "fact_consumo_insumos", "particiones": "anio,mes", "filas": 3371, "segundos": 1.474, "estado": "OK", "fecha_hora": "2026-10-11T02:42:30"}
+{"ejecucion_id": "20261011_024120", "etapa": "calidad", "controles": 9, "criticos": 0, "segundos": 0.28, "estado": "OK", "fecha_hora": "2026-10-11T02:42:34"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "Q1", "filas": 9, "segundos": 2.647, "estado": "OK", "fecha_hora": "2026-10-11T02:42:38"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "Q2", "filas": 10, "segundos": 0.72, "estado": "OK", "fecha_hora": "2026-10-11T02:42:40"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "Q3", "filas": 35, "segundos": 1.267, "estado": "OK", "fecha_hora": "2026-10-11T02:42:41"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "Q4", "filas": 3, "segundos": 1.16, "estado": "OK", "fecha_hora": "2026-10-11T02:42:43"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "Q5", "filas": 23, "segundos": 1.068, "estado": "OK", "fecha_hora": "2026-10-11T02:42:45"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "resumen_ventas", "filas": 1, "segundos": 0.739, "estado": "OK", "fecha_hora": "2026-10-11T02:42:46"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "merma_por_producto", "filas": 7, "segundos": 0.868, "estado": "OK", "fecha_hora": "2026-10-11T02:42:47"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "compras_por_proveedor", "filas": 4, "segundos": 1.042, "estado": "OK", "fecha_hora": "2026-10-11T02:42:49"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "stock_critico", "filas": 6, "segundos": 0.481, "estado": "OK", "fecha_hora": "2026-10-11T02:42:50"}
+{"ejecucion_id": "20261011_024120", "etapa": "consulta", "consulta": "particiones_fact_ventas", "filas": 9, "segundos": 0.764, "estado": "OK", "fecha_hora": "2026-10-11T02:42:51"}

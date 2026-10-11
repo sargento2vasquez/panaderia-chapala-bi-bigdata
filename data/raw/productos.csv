@@ -1,0 +1,17 @@
+id,sku,codigo_barras,nombre,descripcion,tipo,controla_stock,categoria_id,unidad_id,activo,creado_en
+1,HARINA,121213232323,Harina,HARINA PARA INSUMOS,insumo,1,2,1,1,2026-07-08 09:04:23
+2,PAN-FRA,1212121212125,Pan Frances,PAN FRANCES,elaborado,1,1,5,0,2026-07-08 09:04:23
+4,LEVADURA,1212121212123,Levadura,INSUMO DE PRODUCCION,insumo,1,2,2,1,2026-07-08 09:26:58
+5,GASEOSA,787878787878,Gaseosa,GASEOSAS,reventa,1,6,3,1,2026-07-08 09:43:05
+6,ACT-CIL,1213131212123,ACEITE CIL,ACEITE,insumo,1,2,3,1,2026-07-09 05:07:22
+7,MAN-FAM,147258369632,MANTECA FAMOSA,MANTECA,insumo,1,2,1,1,2026-07-09 05:08:50
+8,,,Pan ciabatta,PAN CIABATTA,elaborado,1,1,5,0,2026-07-09 05:21:48
+9,,,PAN,PANES,elaborado,1,1,5,1,2026-07-09 06:14:19
+10,,,YOGURT,,reventa,1,6,3,1,2026-07-09 06:17:51
+11,,,TORTAS,PASTELERIA,elaborado,0,3,5,1,2026-07-09 06:45:38
+18,INS-001,7750000000011,Harina integral,Harina integral para panes saludables,insumo,1,2,1,1,2026-09-14 02:25:45
+19,INS-002,7750000000028,Azucar rubia,Azucar para masas y rellenos,insumo,1,2,1,1,2026-09-14 02:25:45
+20,INS-003,7750000000035,Mantequilla sin sal,Mantequilla para pasteleria,insumo,1,2,1,1,2026-09-14 02:25:45
+21,PAN-001,7750000001018,Pan de molde integral,Pan tajado de produccion diaria,elaborado,1,1,5,1,2026-09-14 02:25:45
+22,PAN-002,7750000001025,Croissant de mantequilla,Croissant horneado por unidad,elaborado,1,1,5,1,2026-09-14 02:25:45
+23,PAS-001,7750000002015,Torta de chocolate familiar,Torta de chocolate para pedidos y eventos,elaborado,1,3,5,1,2026-09-14 02:25:45

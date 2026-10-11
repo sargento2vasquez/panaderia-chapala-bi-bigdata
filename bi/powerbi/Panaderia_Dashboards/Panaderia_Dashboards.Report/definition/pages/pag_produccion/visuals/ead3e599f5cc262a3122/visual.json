@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "ead3e599f5cc262a3122",
+  "position": {
+    "x": 270.0,
+    "y": 76,
+    "z": 11,
+    "width": 240.0,
+    "height": 96,
+    "tabOrder": 11
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "Unidades Programadas"
+                }
+              },
+              "queryRef": "Producciones.Unidades Programadas",
+              "nativeQueryRef": "Unidades Programadas"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

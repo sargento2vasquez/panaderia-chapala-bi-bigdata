@@ -1,0 +1,19 @@
+# Entorno reproducible con Spark 3.5 + Jupyter (alternativa a instalar Java/Spark en Windows).
+# Uso (desde la raíz del repositorio):
+#   docker compose -f bigdata/docker/docker-compose.yml up -d
+#   docker compose -f bigdata/docker/docker-compose.yml exec spark python bigdata/run_pipeline.py
+# Jupyter: http://localhost:8888 (token en los logs: docker compose ... logs spark)
+# Spark UI durante la ejecución: http://localhost:4040
+services:
+  spark:
+    image: jupyter/pyspark-notebook:spark-3.5.0
+    container_name: panaderia-spark
+    working_dir: /home/jovyan/repo
+    volumes:
+      - ../..:/home/jovyan/repo
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    environment:
+      - TZ=America/Lima
+      - PANADERIA_SQL_PASSWORD=${PANADERIA_SQL_PASSWORD:-}

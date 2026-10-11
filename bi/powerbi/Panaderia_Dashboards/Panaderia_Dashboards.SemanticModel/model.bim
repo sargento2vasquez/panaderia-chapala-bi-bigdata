@@ -1,0 +1,906 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "es-ES",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "es-PE",
+    "tables": [
+      {
+        "name": "Calendario",
+        "columns": [
+          {
+            "name": "fecha_key",
+            "dataType": "int64",
+            "sourceColumn": "fecha_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Fecha",
+            "dataType": "dateTime",
+            "sourceColumn": "Fecha",
+            "summarizeBy": "none",
+            "formatString": "dd/mm/yyyy"
+          },
+          {
+            "name": "Anio",
+            "dataType": "int64",
+            "sourceColumn": "Anio",
+            "summarizeBy": "none",
+            "formatString": "0"
+          },
+          {
+            "name": "MesNum",
+            "dataType": "int64",
+            "sourceColumn": "MesNum",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Mes",
+            "dataType": "string",
+            "sourceColumn": "Mes",
+            "summarizeBy": "none",
+            "sortByColumn": "MesNum"
+          },
+          {
+            "name": "DiaSemanaNum",
+            "dataType": "int64",
+            "sourceColumn": "DiaSemanaNum",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "DiaSemana",
+            "dataType": "string",
+            "sourceColumn": "DiaSemana",
+            "summarizeBy": "none",
+            "sortByColumn": "DiaSemanaNum"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Calendario",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"dim_fecha\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"fecha_key\", \"fecha\", \"anio\", \"mes_num\", \"mes\", \"dia_semana_num\", \"dia_semana\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"fecha\",\"Fecha\"}, {\"anio\",\"Anio\"}, {\"mes_num\",\"MesNum\"}, {\"mes\",\"Mes\"}, {\"dia_semana_num\",\"DiaSemanaNum\"}, {\"dia_semana\",\"DiaSemana\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"fecha_key\", Int64.Type}, {\"Fecha\", type date}, {\"Anio\", Int64.Type}, {\"MesNum\", Int64.Type}, {\"Mes\", type text}, {\"DiaSemanaNum\", Int64.Type}, {\"DiaSemana\", type text}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"fecha_key\", \"Fecha\", \"Anio\", \"MesNum\", \"Mes\", \"DiaSemanaNum\", \"DiaSemana\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Productos",
+        "columns": [
+          {
+            "name": "producto_key",
+            "dataType": "int64",
+            "sourceColumn": "producto_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "SKU",
+            "dataType": "string",
+            "sourceColumn": "SKU",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Producto",
+            "dataType": "string",
+            "sourceColumn": "Producto",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Variante",
+            "dataType": "string",
+            "sourceColumn": "Variante",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Articulo",
+            "dataType": "string",
+            "sourceColumn": "Articulo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tipo",
+            "dataType": "string",
+            "sourceColumn": "Tipo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Categoria",
+            "dataType": "string",
+            "sourceColumn": "Categoria",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Unidad",
+            "dataType": "string",
+            "sourceColumn": "Unidad",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PrecioVenta",
+            "dataType": "decimal",
+            "sourceColumn": "PrecioVenta",
+            "summarizeBy": "sum",
+            "formatString": "\"S/ \"#,0.00"
+          },
+          {
+            "name": "Stock",
+            "dataType": "double",
+            "sourceColumn": "Stock",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          },
+          {
+            "name": "StockMinimo",
+            "dataType": "double",
+            "sourceColumn": "StockMinimo",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          },
+          {
+            "name": "EstadoStock",
+            "dataType": "string",
+            "sourceColumn": "EstadoStock",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Activo",
+            "dataType": "boolean",
+            "sourceColumn": "Activo",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Productos",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"dim_producto\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"producto_key\", \"sku\", \"producto\", \"variante\", \"articulo\", \"tipo\", \"categoria\", \"unidad\", \"precio_venta\", \"stock\", \"stock_minimo\", \"estado_stock\", \"activo\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"sku\",\"SKU\"}, {\"producto\",\"Producto\"}, {\"variante\",\"Variante\"}, {\"articulo\",\"Articulo\"}, {\"tipo\",\"Tipo\"}, {\"categoria\",\"Categoria\"}, {\"unidad\",\"Unidad\"}, {\"precio_venta\",\"PrecioVenta\"}, {\"stock\",\"Stock\"}, {\"stock_minimo\",\"StockMinimo\"}, {\"estado_stock\",\"EstadoStock\"}, {\"activo\",\"Activo\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"producto_key\", Int64.Type}, {\"SKU\", type text}, {\"Producto\", type text}, {\"Variante\", type text}, {\"Articulo\", type text}, {\"Tipo\", type text}, {\"Categoria\", type text}, {\"Unidad\", type text}, {\"PrecioVenta\", Currency.Type}, {\"Stock\", type number}, {\"StockMinimo\", type number}, {\"EstadoStock\", type text}, {\"Activo\", type logical}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"producto_key\", \"SKU\", \"Producto\", \"Variante\", \"Articulo\", \"Tipo\", \"Categoria\", \"Unidad\", \"PrecioVenta\", \"Stock\", \"StockMinimo\", \"EstadoStock\", \"Activo\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Nro Productos",
+            "expression": "COUNTROWS(Productos)",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Stock Actual",
+            "expression": "SUM(Productos[Stock])",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Stock Minimo",
+            "expression": "SUM(Productos[StockMinimo])",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Productos Bajo Minimo",
+            "expression": "CALCULATE(COUNTROWS(Productos), Productos[EstadoStock] = \"Bajo mínimo\") + 0",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Productos Stock Negativo",
+            "expression": "CALCULATE(COUNTROWS(Productos), Productos[EstadoStock] = \"Negativo\") + 0",
+            "formatString": "#,0"
+          }
+        ]
+      },
+      {
+        "name": "Clientes",
+        "columns": [
+          {
+            "name": "cliente_key",
+            "dataType": "int64",
+            "sourceColumn": "cliente_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Cliente",
+            "dataType": "string",
+            "sourceColumn": "Cliente",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TipoCliente",
+            "dataType": "string",
+            "sourceColumn": "TipoCliente",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Clientes",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"dim_cliente\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"cliente_key\", \"nombre\", \"tipo_cliente\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"nombre\",\"Cliente\"}, {\"tipo_cliente\",\"TipoCliente\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"cliente_key\", Int64.Type}, {\"Cliente\", type text}, {\"TipoCliente\", type text}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"cliente_key\", \"Cliente\", \"TipoCliente\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "MetodoPago",
+        "columns": [
+          {
+            "name": "metodo_pago_key",
+            "dataType": "int64",
+            "sourceColumn": "metodo_pago_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "MetodoPago",
+            "dataType": "string",
+            "sourceColumn": "MetodoPago",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "MetodoPago",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"dim_metodo_pago\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"metodo_pago_key\", \"metodo_pago\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"metodo_pago\",\"MetodoPago\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"metodo_pago_key\", Int64.Type}, {\"MetodoPago\", type text}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"metodo_pago_key\", \"MetodoPago\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Proveedores",
+        "columns": [
+          {
+            "name": "proveedor_key",
+            "dataType": "int64",
+            "sourceColumn": "proveedor_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Proveedor",
+            "dataType": "string",
+            "sourceColumn": "Proveedor",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Proveedores",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"dim_proveedor\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"proveedor_key\", \"proveedor\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"proveedor\",\"Proveedor\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"proveedor_key\", Int64.Type}, {\"Proveedor\", type text}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"proveedor_key\", \"Proveedor\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ventas",
+        "columns": [
+          {
+            "name": "item_venta_id",
+            "dataType": "int64",
+            "sourceColumn": "item_venta_id",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "venta_id",
+            "dataType": "int64",
+            "sourceColumn": "venta_id",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "fecha_key",
+            "dataType": "int64",
+            "sourceColumn": "fecha_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Hora",
+            "dataType": "int64",
+            "sourceColumn": "Hora",
+            "summarizeBy": "none",
+            "formatString": "0"
+          },
+          {
+            "name": "producto_key",
+            "dataType": "int64",
+            "sourceColumn": "producto_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "cliente_key",
+            "dataType": "int64",
+            "sourceColumn": "cliente_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "metodo_pago_key",
+            "dataType": "int64",
+            "sourceColumn": "metodo_pago_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "TipoComprobante",
+            "dataType": "string",
+            "sourceColumn": "TipoComprobante",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Estado",
+            "dataType": "string",
+            "sourceColumn": "Estado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cantidad",
+            "dataType": "double",
+            "sourceColumn": "Cantidad",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          },
+          {
+            "name": "PrecioUnitario",
+            "dataType": "decimal",
+            "sourceColumn": "PrecioUnitario",
+            "summarizeBy": "sum",
+            "formatString": "\"S/ \"#,0.00"
+          },
+          {
+            "name": "Descuento",
+            "dataType": "decimal",
+            "sourceColumn": "Descuento",
+            "summarizeBy": "sum",
+            "formatString": "\"S/ \"#,0.00"
+          },
+          {
+            "name": "Importe",
+            "dataType": "decimal",
+            "sourceColumn": "Importe",
+            "summarizeBy": "none",
+            "formatString": "\"S/ \"#,0.00",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Ventas",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"fact_ventas\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"item_venta_id\", \"venta_id\", \"fecha_key\", \"hora\", \"producto_key\", \"cliente_key\", \"metodo_pago_key\", \"tipo_comprobante\", \"estado\", \"cantidad\", \"precio_unitario\", \"descuento\", \"importe\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"hora\",\"Hora\"}, {\"tipo_comprobante\",\"TipoComprobante\"}, {\"estado\",\"Estado\"}, {\"cantidad\",\"Cantidad\"}, {\"precio_unitario\",\"PrecioUnitario\"}, {\"descuento\",\"Descuento\"}, {\"importe\",\"Importe\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"item_venta_id\", Int64.Type}, {\"venta_id\", Int64.Type}, {\"fecha_key\", Int64.Type}, {\"Hora\", Int64.Type}, {\"producto_key\", Int64.Type}, {\"cliente_key\", Int64.Type}, {\"metodo_pago_key\", Int64.Type}, {\"TipoComprobante\", type text}, {\"Estado\", type text}, {\"Cantidad\", type number}, {\"PrecioUnitario\", Currency.Type}, {\"Descuento\", Currency.Type}, {\"Importe\", Currency.Type}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"item_venta_id\", \"venta_id\", \"fecha_key\", \"Hora\", \"producto_key\", \"cliente_key\", \"metodo_pago_key\", \"TipoComprobante\", \"Estado\", \"Cantidad\", \"PrecioUnitario\", \"Descuento\", \"Importe\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Ventas Totales",
+            "expression": "CALCULATE(SUM(Ventas[Importe]), Ventas[Estado] = \"pagada\")",
+            "formatString": "\"S/ \"#,0.00"
+          },
+          {
+            "name": "Nro Ventas",
+            "expression": "CALCULATE(DISTINCTCOUNT(Ventas[venta_id]), Ventas[Estado] = \"pagada\")",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Ticket Promedio",
+            "expression": "DIVIDE([Ventas Totales], [Nro Ventas])",
+            "formatString": "\"S/ \"#,0.00"
+          },
+          {
+            "name": "Unidades Vendidas",
+            "expression": "CALCULATE(SUM(Ventas[Cantidad]), Ventas[Estado] = \"pagada\")",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Ventas Anuladas",
+            "expression": "CALCULATE(DISTINCTCOUNT(Ventas[venta_id]), Ventas[Estado] = \"anulada\") + 0",
+            "formatString": "#,0"
+          },
+          {
+            "name": "% Anulacion",
+            "expression": "DIVIDE([Ventas Anuladas], DISTINCTCOUNT(Ventas[venta_id]))",
+            "formatString": "0.0%"
+          }
+        ]
+      },
+      {
+        "name": "Producciones",
+        "columns": [
+          {
+            "name": "produccion_id",
+            "dataType": "int64",
+            "sourceColumn": "produccion_id",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Referencia",
+            "dataType": "string",
+            "sourceColumn": "Referencia",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fecha_key",
+            "dataType": "int64",
+            "sourceColumn": "fecha_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "producto_key",
+            "dataType": "int64",
+            "sourceColumn": "producto_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "CantidadProgramada",
+            "dataType": "double",
+            "sourceColumn": "CantidadProgramada",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          },
+          {
+            "name": "CantidadObtenida",
+            "dataType": "double",
+            "sourceColumn": "CantidadObtenida",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          },
+          {
+            "name": "MermaCantidad",
+            "dataType": "double",
+            "sourceColumn": "MermaCantidad",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          },
+          {
+            "name": "MotivoMerma",
+            "dataType": "string",
+            "sourceColumn": "MotivoMerma",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Estado",
+            "dataType": "string",
+            "sourceColumn": "Estado",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Producciones",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"fact_produccion\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"produccion_id\", \"referencia\", \"fecha_key\", \"producto_key\", \"cantidad_programada\", \"cantidad_obtenida\", \"merma_cantidad\", \"motivo_merma\", \"estado\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"referencia\",\"Referencia\"}, {\"cantidad_programada\",\"CantidadProgramada\"}, {\"cantidad_obtenida\",\"CantidadObtenida\"}, {\"merma_cantidad\",\"MermaCantidad\"}, {\"motivo_merma\",\"MotivoMerma\"}, {\"estado\",\"Estado\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"produccion_id\", Int64.Type}, {\"Referencia\", type text}, {\"fecha_key\", Int64.Type}, {\"producto_key\", Int64.Type}, {\"CantidadProgramada\", type number}, {\"CantidadObtenida\", type number}, {\"MermaCantidad\", type number}, {\"MotivoMerma\", type text}, {\"Estado\", type text}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"produccion_id\", \"Referencia\", \"fecha_key\", \"producto_key\", \"CantidadProgramada\", \"CantidadObtenida\", \"MermaCantidad\", \"MotivoMerma\", \"Estado\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Ordenes Produccion",
+            "expression": "CALCULATE(COUNTROWS(Producciones), Producciones[Estado] = \"finalizada\")",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Unidades Programadas",
+            "expression": "CALCULATE(SUM(Producciones[CantidadProgramada]), Producciones[Estado] = \"finalizada\")",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Unidades Obtenidas",
+            "expression": "CALCULATE(SUM(Producciones[CantidadObtenida]), Producciones[Estado] = \"finalizada\")",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Merma Unidades",
+            "expression": "CALCULATE(SUM(Producciones[MermaCantidad]), Producciones[Estado] = \"finalizada\")",
+            "formatString": "#,0"
+          },
+          {
+            "name": "% Merma",
+            "expression": "DIVIDE([Merma Unidades], [Unidades Programadas])",
+            "formatString": "0.0%"
+          }
+        ]
+      },
+      {
+        "name": "Compras",
+        "columns": [
+          {
+            "name": "item_compra_id",
+            "dataType": "int64",
+            "sourceColumn": "item_compra_id",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "compra_id",
+            "dataType": "int64",
+            "sourceColumn": "compra_id",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Comprobante",
+            "dataType": "string",
+            "sourceColumn": "Comprobante",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fecha_key",
+            "dataType": "int64",
+            "sourceColumn": "fecha_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "proveedor_key",
+            "dataType": "int64",
+            "sourceColumn": "proveedor_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "producto_key",
+            "dataType": "int64",
+            "sourceColumn": "producto_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Estado",
+            "dataType": "string",
+            "sourceColumn": "Estado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cantidad",
+            "dataType": "double",
+            "sourceColumn": "Cantidad",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          },
+          {
+            "name": "CostoUnitario",
+            "dataType": "decimal",
+            "sourceColumn": "CostoUnitario",
+            "summarizeBy": "sum",
+            "formatString": "\"S/ \"#,0.00"
+          },
+          {
+            "name": "Total",
+            "dataType": "decimal",
+            "sourceColumn": "Total",
+            "summarizeBy": "none",
+            "formatString": "\"S/ \"#,0.00",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Compras",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"fact_compras\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"item_compra_id\", \"compra_id\", \"numero_comprobante\", \"fecha_key\", \"proveedor_key\", \"producto_key\", \"estado\", \"cantidad\", \"costo_unitario\", \"total\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"numero_comprobante\",\"Comprobante\"}, {\"estado\",\"Estado\"}, {\"cantidad\",\"Cantidad\"}, {\"costo_unitario\",\"CostoUnitario\"}, {\"total\",\"Total\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"item_compra_id\", Int64.Type}, {\"compra_id\", Int64.Type}, {\"Comprobante\", type text}, {\"fecha_key\", Int64.Type}, {\"proveedor_key\", Int64.Type}, {\"producto_key\", Int64.Type}, {\"Estado\", type text}, {\"Cantidad\", type number}, {\"CostoUnitario\", Currency.Type}, {\"Total\", Currency.Type}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"item_compra_id\", \"compra_id\", \"Comprobante\", \"fecha_key\", \"proveedor_key\", \"producto_key\", \"Estado\", \"Cantidad\", \"CostoUnitario\", \"Total\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Compras",
+            "expression": "CALCULATE(SUM(Compras[Total]), Compras[Estado] <> \"anulada\")",
+            "formatString": "\"S/ \"#,0.00"
+          },
+          {
+            "name": "Nro Compras",
+            "expression": "CALCULATE(DISTINCTCOUNT(Compras[compra_id]), Compras[Estado] <> \"anulada\")",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Proveedores Activos",
+            "expression": "CALCULATE(DISTINCTCOUNT(Compras[proveedor_key]), Compras[Estado] <> \"anulada\")",
+            "formatString": "#,0"
+          }
+        ]
+      },
+      {
+        "name": "ConsumoInsumos",
+        "columns": [
+          {
+            "name": "consumo_id",
+            "dataType": "int64",
+            "sourceColumn": "consumo_id",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "produccion_id",
+            "dataType": "int64",
+            "sourceColumn": "produccion_id",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "fecha_key",
+            "dataType": "int64",
+            "sourceColumn": "fecha_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "producto_key",
+            "dataType": "int64",
+            "sourceColumn": "producto_key",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Cantidad",
+            "dataType": "double",
+            "sourceColumn": "Cantidad",
+            "summarizeBy": "sum",
+            "formatString": "#,0.###"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ConsumoInsumos",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Origen = Sql.Database(ServidorSQL, BaseDatos),",
+                "    T = Origen{[Schema=\"dw\",Item=\"fact_consumo_insumos\"]}[Data],",
+                "    Sel = Table.SelectColumns(T, {\"consumo_id\", \"produccion_id\", \"fecha_key\", \"producto_key\", \"cantidad\"}),",
+                "    Ren = Table.RenameColumns(Sel, {{\"cantidad\",\"Cantidad\"}}),",
+                "    Tipos = Table.TransformColumnTypes(Ren, {{\"consumo_id\", Int64.Type}, {\"produccion_id\", Int64.Type}, {\"fecha_key\", Int64.Type}, {\"producto_key\", Int64.Type}, {\"Cantidad\", type number}}),",
+                "    Final = Table.SelectColumns(Tipos, {\"consumo_id\", \"produccion_id\", \"fecha_key\", \"producto_key\", \"Cantidad\"})",
+                "in",
+                "    Final"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Consumo Insumos",
+            "expression": "SUM(ConsumoInsumos[Cantidad])",
+            "formatString": "#,0.0"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "0708acd9ec7fb3c0b395",
+        "fromTable": "Ventas",
+        "fromColumn": "fecha_key",
+        "toTable": "Calendario",
+        "toColumn": "fecha_key"
+      },
+      {
+        "name": "e53bbcee692ba05bad17",
+        "fromTable": "Ventas",
+        "fromColumn": "producto_key",
+        "toTable": "Productos",
+        "toColumn": "producto_key"
+      },
+      {
+        "name": "7c13de3559321a7582fc",
+        "fromTable": "Ventas",
+        "fromColumn": "cliente_key",
+        "toTable": "Clientes",
+        "toColumn": "cliente_key"
+      },
+      {
+        "name": "f36f63b4ec48f66a6a63",
+        "fromTable": "Ventas",
+        "fromColumn": "metodo_pago_key",
+        "toTable": "MetodoPago",
+        "toColumn": "metodo_pago_key"
+      },
+      {
+        "name": "2129cbebe96e4178a485",
+        "fromTable": "Producciones",
+        "fromColumn": "fecha_key",
+        "toTable": "Calendario",
+        "toColumn": "fecha_key"
+      },
+      {
+        "name": "573aa7cf7c774b21de9b",
+        "fromTable": "Producciones",
+        "fromColumn": "producto_key",
+        "toTable": "Productos",
+        "toColumn": "producto_key"
+      },
+      {
+        "name": "87101c3b5634b3d722b7",
+        "fromTable": "Compras",
+        "fromColumn": "fecha_key",
+        "toTable": "Calendario",
+        "toColumn": "fecha_key"
+      },
+      {
+        "name": "0cc664e23982b6c9e6f4",
+        "fromTable": "Compras",
+        "fromColumn": "proveedor_key",
+        "toTable": "Proveedores",
+        "toColumn": "proveedor_key"
+      },
+      {
+        "name": "c92a8ae8937935002cc7",
+        "fromTable": "Compras",
+        "fromColumn": "producto_key",
+        "toTable": "Productos",
+        "toColumn": "producto_key"
+      },
+      {
+        "name": "7332dc921d860b88c5f2",
+        "fromTable": "ConsumoInsumos",
+        "fromColumn": "fecha_key",
+        "toTable": "Calendario",
+        "toColumn": "fecha_key"
+      },
+      {
+        "name": "7e1e2f40af19b9b35859",
+        "fromTable": "ConsumoInsumos",
+        "fromColumn": "producto_key",
+        "toTable": "Productos",
+        "toColumn": "producto_key"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "ServidorSQL",
+        "kind": "m",
+        "expression": "\"localhost\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "description": "Nombre del servidor SQL Server (ej.: localhost, .\\SQLEXPRESS, MIPC\\SQLEXPRESS)"
+      },
+      {
+        "name": "BaseDatos",
+        "kind": "m",
+        "expression": "\"panaderia_db\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"ServidorSQL\", \"BaseDatos\", \"Calendario\", \"Productos\", \"Clientes\", \"MetodoPago\", \"Proveedores\", \"Ventas\", \"Producciones\", \"Compras\", \"ConsumoInsumos\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      }
+    ]
+  }
+}

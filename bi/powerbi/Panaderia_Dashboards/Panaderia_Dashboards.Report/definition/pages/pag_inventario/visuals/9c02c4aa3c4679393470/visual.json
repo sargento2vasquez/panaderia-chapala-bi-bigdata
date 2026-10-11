@@ -1,0 +1,77 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "9c02c4aa3c4679393470",
+  "position": {
+    "x": 850,
+    "y": 452,
+    "z": 24,
+    "width": 410,
+    "height": 258,
+    "tabOrder": 24
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Productos"
+                    }
+                  },
+                  "Property": "EstadoStock"
+                }
+              },
+              "queryRef": "Productos.EstadoStock",
+              "nativeQueryRef": "EstadoStock"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Productos"
+                    }
+                  },
+                  "Property": "Nro Productos"
+                }
+              },
+              "queryRef": "Productos.Nro Productos",
+              "nativeQueryRef": "Nro Productos"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Productos por estado de stock'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

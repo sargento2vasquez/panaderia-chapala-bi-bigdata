@@ -1,0 +1,91 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "2fb82702ec1345f06a40",
+  "position": {
+    "x": 20,
+    "y": 184,
+    "z": 20,
+    "width": 610,
+    "height": 258,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Productos"
+                    }
+                  },
+                  "Property": "Articulo"
+                }
+              },
+              "queryRef": "Productos.Articulo",
+              "nativeQueryRef": "Articulo"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "Unidades Obtenidas"
+                }
+              },
+              "queryRef": "Producciones.Unidades Obtenidas",
+              "nativeQueryRef": "Unidades Obtenidas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "Merma Unidades"
+                }
+              },
+              "queryRef": "Producciones.Merma Unidades",
+              "nativeQueryRef": "Merma Unidades"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Unidades obtenidas vs. merma por producto'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

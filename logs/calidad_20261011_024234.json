@@ -1,0 +1,47 @@
+[
+  {
+    "control": "filas_items_bronce_vs_plata",
+    "valor": 16075,
+    "estado": "OK"
+  },
+  {
+    "control": "lineas_sin_venta",
+    "valor": 0,
+    "estado": "OK"
+  },
+  {
+    "control": "fact_ventas_vs_items",
+    "valor": 16075,
+    "estado": "OK"
+  },
+  {
+    "control": "ventas_fecha_nula",
+    "valor": 0,
+    "estado": "OK"
+  },
+  {
+    "control": "importe_negativo",
+    "valor": 0,
+    "estado": "OK"
+  },
+  {
+    "control": "ventas_total_distinto_lineas",
+    "valor": 6,
+    "estado": "AVISO"
+  },
+  {
+    "control": "variantes_stock_negativo",
+    "valor": 6,
+    "estado": "AVISO"
+  },
+  {
+    "control": "comprobantes_duplicados",
+    "valor": 0,
+    "estado": "OK"
+  },
+  {
+    "control": "ventas_sin_comprobante",
+    "valor": 9,
+    "estado": "AVISO"
+  }
+]

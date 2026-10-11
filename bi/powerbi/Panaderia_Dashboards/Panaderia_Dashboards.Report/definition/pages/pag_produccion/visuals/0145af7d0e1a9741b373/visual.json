@@ -1,0 +1,130 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "0145af7d0e1a9741b373",
+  "position": {
+    "x": 510,
+    "y": 452,
+    "z": 23,
+    "width": 750,
+    "height": 258,
+    "tabOrder": 23
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Productos"
+                    }
+                  },
+                  "Property": "Articulo"
+                }
+              },
+              "queryRef": "Productos.Articulo",
+              "nativeQueryRef": "Articulo",
+              "displayName": "Producto"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "Ordenes Produccion"
+                }
+              },
+              "queryRef": "Producciones.Ordenes Produccion",
+              "nativeQueryRef": "Ordenes Produccion"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "Unidades Programadas"
+                }
+              },
+              "queryRef": "Producciones.Unidades Programadas",
+              "nativeQueryRef": "Unidades Programadas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "Unidades Obtenidas"
+                }
+              },
+              "queryRef": "Producciones.Unidades Obtenidas",
+              "nativeQueryRef": "Unidades Obtenidas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "Merma Unidades"
+                }
+              },
+              "queryRef": "Producciones.Merma Unidades",
+              "nativeQueryRef": "Merma Unidades"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Producciones"
+                    }
+                  },
+                  "Property": "% Merma"
+                }
+              },
+              "queryRef": "Producciones.% Merma",
+              "nativeQueryRef": "% Merma"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalle por producto'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

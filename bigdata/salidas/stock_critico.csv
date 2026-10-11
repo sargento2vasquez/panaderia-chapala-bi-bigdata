@@ -1,0 +1,7 @@
+articulo,tipo,stock,stock_minimo,estado_stock
+YOGURT - YOGURT GRIEGO 500 ML,reventa,-955.000,4.000,Negativo
+Gaseosa - Botella 500ml,reventa,-663.000,6.000,Negativo
+Torta de chocolate familiar - Torta 2 kg,elaborado,-311.000,3.000,Negativo
+Mantequilla sin sal - Caja 10 kg,insumo,-252.806,5.000,Negativo
+Harina - Bolsa 50kg,insumo,-132.116,3.000,Negativo
+Harina integral - Saco 25 kg,insumo,-85.821,10.000,Negativo

@@ -1,0 +1,827 @@
+id,referencia,receta_id,variante_salida_id,cantidad_programada,cantidad_obtenida,merma_cantidad,merma_motivo,fecha,producido_por,estado,observaciones
+1,,1,3,20,0,0,,2026-07-08 04:43:24,1,anulada,
+2,,1,3,10,9,1,Panes quemados en horno,2026-07-08 04:43:54,1,finalizada,
+3,ORDEN A PRODUCIR,2,10,200,200,10,PANES QUEMADOS,2026-07-09 00:57:13,1,finalizada,ORDEN A PRODUCIR
+4,PRODUCION 5 TORTAS 3 LECHES,3,13,5,5,0,,2026-07-09 01:50:53,1,finalizada,
+5,ORDEN A PRODUCIR 5 TORTAS,3,13,5,5,0,,2026-07-09 01:53:44,1,finalizada,ORDEN A PRODUCIR
+6,ORDEN A PRODUCIR,2,10,50,50,10,PANES QUEMADOS,2026-07-09 02:48:03,1,finalizada,ORDEN A PRODUCIR
+7,ORDEN A PRODUCIR,1,3,50,50,10,PANES QUEMADOS,2026-07-09 02:49:45,1,finalizada,ORDEN A PRODUCIR
+8,ORDEN A PRODUCIR,2,10,50,50,2,PANES QUEMADOS,2026-07-09 02:57:38,1,finalizada,ORDEN A PRODUCIR
+9,ORDEN A PRODUCIR,3,13,2,2,1,SE CAYO AL PISO,2026-07-09 03:08:44,1,finalizada,ORDEN A PRODUCIR
+10,orden a produccion,3,13,2,2,1,se quemo,2026-07-09 03:18:53,1,finalizada,orden a produccion
+11,orden a produccion,4,15,10,10,1,se quemooo,2026-07-09 03:28:55,1,finalizada,orden a produccion
+12,orden a produccion,4,15,50,50,5,se quemaron 5 panes,2026-07-09 04:24:02,1,finalizada,orden a produccion
+13,OP-2026-010,,25,120,116,4,Piezas con deformacion en horneado,2026-02-05 05:30:00,3,finalizada,Produccion de pan de molde
+14,OP-2026-011,,26,80,78,2,Perdida normal de proceso,2026-03-12 05:20:00,3,finalizada,Produccion de croissants
+15,OP-20260401-1,4,15,943,847,96,Panes quemados en horno,2026-04-01 04:30:00,3,finalizada,SEED-T2 orden de produccion
+16,OP-20260401-2,4,15,744,631,113,Perdida normal de proceso,2026-04-01 15:00:00,3,finalizada,SEED-T2 orden de produccion
+17,OP-20260401-3,6,26,114,97,17,Panes quemados en horno,2026-04-01 05:15:00,3,finalizada,SEED-T2 orden de produccion
+18,OP-20260401-4,5,25,69,60,9,Piezas con deformacion en horneado,2026-04-01 05:45:00,3,finalizada,SEED-T2 orden de produccion
+19,OP-20260402-1,4,15,935,843,92,Panes quemados en horno,2026-04-02 04:30:00,3,finalizada,SEED-T2 orden de produccion
+20,OP-20260402-2,4,15,716,651,65,Panes quemados en horno,2026-04-02 15:00:00,3,finalizada,SEED-T2 orden de produccion
+21,OP-20260402-3,6,26,153,137,16,Panes quemados en horno,2026-04-02 05:15:00,3,finalizada,SEED-T2 orden de produccion
+22,OP-20260402-4,5,25,56,51,5,Panes quemados en horno,2026-04-02 05:45:00,3,finalizada,SEED-T2 orden de produccion
+23,OP-20260403-1,4,15,930,822,108,Piezas con deformacion en horneado,2026-04-03 04:30:00,3,finalizada,SEED-T2 orden de produccion
+24,OP-20260403-2,4,15,760,648,112,Panes quemados en horno,2026-04-03 15:00:00,3,finalizada,SEED-T2 orden de produccion
+25,OP-20260403-3,6,26,139,120,19,Panes quemados en horno,2026-04-03 05:15:00,3,finalizada,SEED-T2 orden de produccion
+26,OP-20260403-4,5,25,62,54,8,Panes quemados en horno,2026-04-03 05:45:00,3,finalizada,SEED-T2 orden de produccion
+27,OP-20260404-1,4,15,1039,885,154,Piezas con deformacion en horneado,2026-04-04 04:30:00,3,finalizada,SEED-T2 orden de produccion
+28,OP-20260404-2,4,15,912,773,139,Panes quemados en horno,2026-04-04 15:00:00,3,finalizada,SEED-T2 orden de produccion
+29,OP-20260404-3,6,26,180,152,28,Perdida normal de proceso,2026-04-04 05:15:00,3,finalizada,SEED-T2 orden de produccion
+30,OP-20260404-4,5,25,80,69,11,Panes quemados en horno,2026-04-04 05:45:00,3,finalizada,SEED-T2 orden de produccion
+31,OP-20260405-1,4,15,1196,1071,125,Panes quemados en horno,2026-04-05 04:30:00,3,finalizada,SEED-T2 orden de produccion
+32,OP-20260405-2,4,15,972,846,126,Piezas con deformacion en horneado,2026-04-05 15:00:00,3,finalizada,SEED-T2 orden de produccion
+33,OP-20260405-3,6,26,192,167,25,Piezas con deformacion en horneado,2026-04-05 05:15:00,3,finalizada,SEED-T2 orden de produccion
+34,OP-20260405-4,5,25,72,61,11,Panes quemados en horno,2026-04-05 05:45:00,3,finalizada,SEED-T2 orden de produccion
+35,OP-20260405-5,7,27,1,0,1,Piezas con deformacion en horneado,2026-04-05 09:00:00,3,finalizada,SEED-T2 orden de produccion
+36,OP-20260406-1,4,15,789,672,117,Piezas con deformacion en horneado,2026-04-06 04:30:00,3,finalizada,SEED-T2 orden de produccion
+37,OP-20260406-2,4,15,655,590,65,Piezas con deformacion en horneado,2026-04-06 15:00:00,3,finalizada,SEED-T2 orden de produccion
+38,OP-20260406-3,6,26,121,110,11,Piezas con deformacion en horneado,2026-04-06 05:15:00,3,finalizada,SEED-T2 orden de produccion
+39,OP-20260406-4,5,25,71,63,8,Panes quemados en horno,2026-04-06 05:45:00,3,finalizada,SEED-T2 orden de produccion
+40,OP-20260406-5,7,27,4,3,1,Panes quemados en horno,2026-04-06 09:00:00,3,finalizada,SEED-T2 orden de produccion
+41,OP-20260407-1,4,15,919,833,86,Panes quemados en horno,2026-04-07 04:30:00,3,finalizada,SEED-T2 orden de produccion
+42,OP-20260407-2,4,15,715,645,70,Piezas con deformacion en horneado,2026-04-07 15:00:00,3,finalizada,SEED-T2 orden de produccion
+43,OP-20260407-3,6,26,135,122,13,Piezas con deformacion en horneado,2026-04-07 05:15:00,3,finalizada,SEED-T2 orden de produccion
+44,OP-20260407-4,5,25,65,58,7,Piezas con deformacion en horneado,2026-04-07 05:45:00,3,finalizada,SEED-T2 orden de produccion
+45,OP-20260407-5,7,27,2,1,1,Caida durante manipulacion,2026-04-07 09:00:00,3,finalizada,SEED-T2 orden de produccion
+46,OP-20260408-1,4,15,957,847,110,Piezas con deformacion en horneado,2026-04-08 04:30:00,3,finalizada,SEED-T2 orden de produccion
+47,OP-20260408-2,4,15,755,640,115,Caida durante manipulacion,2026-04-08 15:00:00,3,finalizada,SEED-T2 orden de produccion
+48,OP-20260408-3,6,26,148,126,22,Panes quemados en horno,2026-04-08 05:15:00,3,finalizada,SEED-T2 orden de produccion
+49,OP-20260408-4,5,25,75,67,8,Piezas con deformacion en horneado,2026-04-08 05:45:00,3,finalizada,SEED-T2 orden de produccion
+50,OP-20260408-5,7,27,3,2,1,Piezas con deformacion en horneado,2026-04-08 09:00:00,3,finalizada,SEED-T2 orden de produccion
+51,OP-20260409-1,4,15,897,770,127,Panes quemados en horno,2026-04-09 04:30:00,3,finalizada,SEED-T2 orden de produccion
+52,OP-20260409-2,4,15,802,696,106,Panes quemados en horno,2026-04-09 15:00:00,3,finalizada,SEED-T2 orden de produccion
+53,OP-20260409-3,6,26,118,105,13,Panes quemados en horno,2026-04-09 05:15:00,3,finalizada,SEED-T2 orden de produccion
+54,OP-20260409-4,5,25,75,63,12,Piezas con deformacion en horneado,2026-04-09 05:45:00,3,finalizada,SEED-T2 orden de produccion
+55,OP-20260409-5,7,27,4,3,1,Panes quemados en horno,2026-04-09 09:00:00,3,finalizada,SEED-T2 orden de produccion
+56,OP-20260410-1,4,15,842,750,92,Perdida normal de proceso,2026-04-10 04:30:00,3,finalizada,SEED-T2 orden de produccion
+57,OP-20260410-2,4,15,684,620,64,Panes quemados en horno,2026-04-10 15:00:00,3,finalizada,SEED-T2 orden de produccion
+58,OP-20260410-3,6,26,137,119,18,Panes quemados en horno,2026-04-10 05:15:00,3,finalizada,SEED-T2 orden de produccion
+59,OP-20260410-4,5,25,64,54,10,Panes quemados en horno,2026-04-10 05:45:00,3,finalizada,SEED-T2 orden de produccion
+60,OP-20260410-5,7,27,4,3,1,Panes quemados en horno,2026-04-10 09:00:00,3,finalizada,SEED-T2 orden de produccion
+61,OP-20260411-1,4,15,1145,980,165,Piezas con deformacion en horneado,2026-04-11 04:30:00,3,finalizada,SEED-T2 orden de produccion
+62,OP-20260411-2,4,15,889,767,122,Piezas con deformacion en horneado,2026-04-11 15:00:00,3,finalizada,SEED-T2 orden de produccion
+63,OP-20260411-3,6,26,178,155,23,Piezas con deformacion en horneado,2026-04-11 05:15:00,3,finalizada,SEED-T2 orden de produccion
+64,OP-20260411-4,5,25,69,63,6,Panes quemados en horno,2026-04-11 05:45:00,3,finalizada,SEED-T2 orden de produccion
+65,OP-20260412-1,4,15,1199,1075,124,Piezas con deformacion en horneado,2026-04-12 04:30:00,3,finalizada,SEED-T2 orden de produccion
+66,OP-20260412-2,4,15,949,854,95,Caida durante manipulacion,2026-04-12 15:00:00,3,finalizada,SEED-T2 orden de produccion
+67,OP-20260412-3,6,26,186,161,25,Perdida normal de proceso,2026-04-12 05:15:00,3,finalizada,SEED-T2 orden de produccion
+68,OP-20260412-4,5,25,74,67,7,Panes quemados en horno,2026-04-12 05:45:00,3,finalizada,SEED-T2 orden de produccion
+69,OP-20260413-1,4,15,818,728,90,Perdida normal de proceso,2026-04-13 04:30:00,3,finalizada,SEED-T2 orden de produccion
+70,OP-20260413-2,4,15,621,528,93,Panes quemados en horno,2026-04-13 15:00:00,3,finalizada,SEED-T2 orden de produccion
+71,OP-20260413-3,6,26,130,112,18,Perdida normal de proceso,2026-04-13 05:15:00,3,finalizada,SEED-T2 orden de produccion
+72,OP-20260413-4,5,25,69,62,7,Panes quemados en horno,2026-04-13 05:45:00,3,finalizada,SEED-T2 orden de produccion
+73,OP-20260414-1,4,15,848,760,88,Panes quemados en horno,2026-04-14 04:30:00,3,finalizada,SEED-T2 orden de produccion
+74,OP-20260414-2,4,15,716,637,79,Piezas con deformacion en horneado,2026-04-14 15:00:00,3,finalizada,SEED-T2 orden de produccion
+75,OP-20260414-3,6,26,124,108,16,Perdida normal de proceso,2026-04-14 05:15:00,3,finalizada,SEED-T2 orden de produccion
+76,OP-20260414-4,5,25,79,67,12,Panes quemados en horno,2026-04-14 05:45:00,3,finalizada,SEED-T2 orden de produccion
+77,OP-20260414-5,7,27,1,0,1,Perdida normal de proceso,2026-04-14 09:00:00,3,finalizada,SEED-T2 orden de produccion
+78,OP-20260415-1,4,15,925,804,121,Piezas con deformacion en horneado,2026-04-15 04:30:00,3,finalizada,SEED-T2 orden de produccion
+79,OP-20260415-2,4,15,718,645,73,Piezas con deformacion en horneado,2026-04-15 15:00:00,3,finalizada,SEED-T2 orden de produccion
+80,OP-20260415-3,6,26,143,123,20,Panes quemados en horno,2026-04-15 05:15:00,3,finalizada,SEED-T2 orden de produccion
+81,OP-20260415-4,5,25,63,55,8,Panes quemados en horno,2026-04-15 05:45:00,3,finalizada,SEED-T2 orden de produccion
+82,OP-20260415-5,7,27,3,2,1,Caida durante manipulacion,2026-04-15 09:00:00,3,finalizada,SEED-T2 orden de produccion
+83,OP-20260416-1,4,15,955,852,103,Panes quemados en horno,2026-04-16 04:30:00,3,finalizada,SEED-T2 orden de produccion
+84,OP-20260416-2,4,15,802,690,112,Piezas con deformacion en horneado,2026-04-16 15:00:00,3,finalizada,SEED-T2 orden de produccion
+85,OP-20260416-3,6,26,123,112,11,Panes quemados en horno,2026-04-16 05:15:00,3,finalizada,SEED-T2 orden de produccion
+86,OP-20260416-4,5,25,55,48,7,Panes quemados en horno,2026-04-16 05:45:00,3,finalizada,SEED-T2 orden de produccion
+87,OP-20260417-1,4,15,857,739,118,Piezas con deformacion en horneado,2026-04-17 04:30:00,3,finalizada,SEED-T2 orden de produccion
+88,OP-20260417-2,4,15,731,623,108,Piezas con deformacion en horneado,2026-04-17 15:00:00,3,finalizada,SEED-T2 orden de produccion
+89,OP-20260417-3,6,26,127,114,13,Piezas con deformacion en horneado,2026-04-17 05:15:00,3,finalizada,SEED-T2 orden de produccion
+90,OP-20260417-4,5,25,55,50,5,Panes quemados en horno,2026-04-17 05:45:00,3,finalizada,SEED-T2 orden de produccion
+91,OP-20260418-1,4,15,1136,1028,108,Piezas con deformacion en horneado,2026-04-18 04:30:00,3,finalizada,SEED-T2 orden de produccion
+92,OP-20260418-2,4,15,872,770,102,Piezas con deformacion en horneado,2026-04-18 15:00:00,3,finalizada,SEED-T2 orden de produccion
+93,OP-20260418-3,6,26,168,151,17,Panes quemados en horno,2026-04-18 05:15:00,3,finalizada,SEED-T2 orden de produccion
+94,OP-20260418-4,5,25,92,81,11,Perdida normal de proceso,2026-04-18 05:45:00,3,finalizada,SEED-T2 orden de produccion
+95,OP-20260419-1,4,15,1094,953,141,Piezas con deformacion en horneado,2026-04-19 04:30:00,3,finalizada,SEED-T2 orden de produccion
+96,OP-20260419-2,4,15,854,776,78,Perdida normal de proceso,2026-04-19 15:00:00,3,finalizada,SEED-T2 orden de produccion
+97,OP-20260419-3,6,26,184,159,25,Piezas con deformacion en horneado,2026-04-19 05:15:00,3,finalizada,SEED-T2 orden de produccion
+98,OP-20260419-4,5,25,98,88,10,Piezas con deformacion en horneado,2026-04-19 05:45:00,3,finalizada,SEED-T2 orden de produccion
+99,OP-20260420-1,4,15,819,725,94,Perdida normal de proceso,2026-04-20 04:30:00,3,finalizada,SEED-T2 orden de produccion
+100,OP-20260420-2,4,15,641,541,100,Piezas con deformacion en horneado,2026-04-20 15:00:00,3,finalizada,SEED-T2 orden de produccion
+101,OP-20260420-3,6,26,122,106,16,Panes quemados en horno,2026-04-20 05:15:00,3,finalizada,SEED-T2 orden de produccion
+102,OP-20260420-4,5,25,50,42,8,Piezas con deformacion en horneado,2026-04-20 05:45:00,3,finalizada,SEED-T2 orden de produccion
+103,OP-20260421-1,4,15,923,778,145,Perdida normal de proceso,2026-04-21 04:30:00,3,finalizada,SEED-T2 orden de produccion
+104,OP-20260421-2,4,15,717,648,69,Piezas con deformacion en horneado,2026-04-21 15:00:00,3,finalizada,SEED-T2 orden de produccion
+105,OP-20260421-3,6,26,126,108,18,Panes quemados en horno,2026-04-21 05:15:00,3,finalizada,SEED-T2 orden de produccion
+106,OP-20260421-4,5,25,84,73,11,Piezas con deformacion en horneado,2026-04-21 05:45:00,3,finalizada,SEED-T2 orden de produccion
+107,OP-20260421-5,7,27,1,0,1,Piezas con deformacion en horneado,2026-04-21 09:00:00,3,finalizada,SEED-T2 orden de produccion
+108,OP-20260422-1,4,15,821,690,131,Perdida normal de proceso,2026-04-22 04:30:00,3,finalizada,SEED-T2 orden de produccion
+109,OP-20260422-2,4,15,790,712,78,Panes quemados en horno,2026-04-22 15:00:00,3,finalizada,SEED-T2 orden de produccion
+110,OP-20260422-3,6,26,152,132,20,Piezas con deformacion en horneado,2026-04-22 05:15:00,3,finalizada,SEED-T2 orden de produccion
+111,OP-20260422-4,5,25,64,55,9,Piezas con deformacion en horneado,2026-04-22 05:45:00,3,finalizada,SEED-T2 orden de produccion
+112,OP-20260422-5,7,27,4,3,1,Panes quemados en horno,2026-04-22 09:00:00,3,finalizada,SEED-T2 orden de produccion
+113,OP-20260423-1,4,15,939,841,98,Panes quemados en horno,2026-04-23 04:30:00,3,finalizada,SEED-T2 orden de produccion
+114,OP-20260423-2,4,15,762,649,113,Panes quemados en horno,2026-04-23 15:00:00,3,finalizada,SEED-T2 orden de produccion
+115,OP-20260423-3,6,26,149,130,19,Piezas con deformacion en horneado,2026-04-23 05:15:00,3,finalizada,SEED-T2 orden de produccion
+116,OP-20260423-4,5,25,84,72,12,Caida durante manipulacion,2026-04-23 05:45:00,3,finalizada,SEED-T2 orden de produccion
+117,OP-20260423-5,7,27,3,2,1,Perdida normal de proceso,2026-04-23 09:00:00,3,finalizada,SEED-T2 orden de produccion
+118,OP-20260424-1,4,15,845,736,109,Panes quemados en horno,2026-04-24 04:30:00,3,finalizada,SEED-T2 orden de produccion
+119,OP-20260424-2,4,15,765,671,94,Panes quemados en horno,2026-04-24 15:00:00,3,finalizada,SEED-T2 orden de produccion
+120,OP-20260424-3,6,26,134,117,17,Piezas con deformacion en horneado,2026-04-24 05:15:00,3,finalizada,SEED-T2 orden de produccion
+121,OP-20260424-4,5,25,57,51,6,Panes quemados en horno,2026-04-24 05:45:00,3,finalizada,SEED-T2 orden de produccion
+122,OP-20260425-1,4,15,1089,988,101,Panes quemados en horno,2026-04-25 04:30:00,3,finalizada,SEED-T2 orden de produccion
+123,OP-20260425-2,4,15,911,791,120,Piezas con deformacion en horneado,2026-04-25 15:00:00,3,finalizada,SEED-T2 orden de produccion
+124,OP-20260425-3,6,26,186,161,25,Piezas con deformacion en horneado,2026-04-25 05:15:00,3,finalizada,SEED-T2 orden de produccion
+125,OP-20260425-4,5,25,78,70,8,Perdida normal de proceso,2026-04-25 05:45:00,3,finalizada,SEED-T2 orden de produccion
+126,OP-20260425-5,7,27,3,2,1,Panes quemados en horno,2026-04-25 09:00:00,3,finalizada,SEED-T2 orden de produccion
+127,OP-20260426-1,4,15,1146,1021,125,Panes quemados en horno,2026-04-26 04:30:00,3,finalizada,SEED-T2 orden de produccion
+128,OP-20260426-2,4,15,914,814,100,Panes quemados en horno,2026-04-26 15:00:00,3,finalizada,SEED-T2 orden de produccion
+129,OP-20260426-3,6,26,192,169,23,Panes quemados en horno,2026-04-26 05:15:00,3,finalizada,SEED-T2 orden de produccion
+130,OP-20260426-4,5,25,78,70,8,Piezas con deformacion en horneado,2026-04-26 05:45:00,3,finalizada,SEED-T2 orden de produccion
+131,OP-20260426-5,7,27,2,1,1,Piezas con deformacion en horneado,2026-04-26 09:00:00,3,finalizada,SEED-T2 orden de produccion
+132,OP-20260427-1,4,15,814,709,105,Piezas con deformacion en horneado,2026-04-27 04:30:00,3,finalizada,SEED-T2 orden de produccion
+133,OP-20260427-2,4,15,675,577,98,Panes quemados en horno,2026-04-27 15:00:00,3,finalizada,SEED-T2 orden de produccion
+134,OP-20260427-3,6,26,114,97,17,Panes quemados en horno,2026-04-27 05:15:00,3,finalizada,SEED-T2 orden de produccion
+135,OP-20260427-4,5,25,63,53,10,Panes quemados en horno,2026-04-27 05:45:00,3,finalizada,SEED-T2 orden de produccion
+136,OP-20260428-1,4,15,882,799,83,Piezas con deformacion en horneado,2026-04-28 04:30:00,3,finalizada,SEED-T2 orden de produccion
+137,OP-20260428-2,4,15,805,724,81,Caida durante manipulacion,2026-04-28 15:00:00,3,finalizada,SEED-T2 orden de produccion
+138,OP-20260428-3,6,26,130,112,18,Piezas con deformacion en horneado,2026-04-28 05:15:00,3,finalizada,SEED-T2 orden de produccion
+139,OP-20260428-4,5,25,60,52,8,Panes quemados en horno,2026-04-28 05:45:00,3,finalizada,SEED-T2 orden de produccion
+140,OP-20260429-1,4,15,941,846,95,Panes quemados en horno,2026-04-29 04:30:00,3,finalizada,SEED-T2 orden de produccion
+141,OP-20260429-2,4,15,743,631,112,Caida durante manipulacion,2026-04-29 15:00:00,3,finalizada,SEED-T2 orden de produccion
+142,OP-20260429-3,6,26,134,121,13,Panes quemados en horno,2026-04-29 05:15:00,3,finalizada,SEED-T2 orden de produccion
+143,OP-20260429-4,5,25,84,73,11,Panes quemados en horno,2026-04-29 05:45:00,3,finalizada,SEED-T2 orden de produccion
+144,OP-20260430-1,4,15,823,717,106,Perdida normal de proceso,2026-04-30 04:30:00,3,finalizada,SEED-T2 orden de produccion
+145,OP-20260430-2,4,15,801,707,94,Panes quemados en horno,2026-04-30 15:00:00,3,finalizada,SEED-T2 orden de produccion
+146,OP-20260430-3,6,26,137,119,18,Panes quemados en horno,2026-04-30 05:15:00,3,finalizada,SEED-T2 orden de produccion
+147,OP-20260430-4,5,25,71,62,9,Piezas con deformacion en horneado,2026-04-30 05:45:00,3,finalizada,SEED-T2 orden de produccion
+148,OP-20260501-1,4,15,927,837,90,Panes quemados en horno,2026-05-01 04:30:00,3,finalizada,SEED-T2 orden de produccion
+149,OP-20260501-2,4,15,756,666,90,Panes quemados en horno,2026-05-01 15:00:00,3,finalizada,SEED-T2 orden de produccion
+150,OP-20260501-3,6,26,115,98,17,Piezas con deformacion en horneado,2026-05-01 05:15:00,3,finalizada,SEED-T2 orden de produccion
+151,OP-20260501-4,5,25,79,69,10,Piezas con deformacion en horneado,2026-05-01 05:45:00,3,finalizada,SEED-T2 orden de produccion
+152,OP-20260501-5,7,27,3,2,1,Perdida normal de proceso,2026-05-01 09:00:00,3,finalizada,SEED-T2 orden de produccion
+153,OP-20260502-1,4,15,1041,886,155,Perdida normal de proceso,2026-05-02 04:30:00,3,finalizada,SEED-T2 orden de produccion
+154,OP-20260502-2,4,15,864,737,127,Caida durante manipulacion,2026-05-02 15:00:00,3,finalizada,SEED-T2 orden de produccion
+155,OP-20260502-3,6,26,140,119,21,Panes quemados en horno,2026-05-02 05:15:00,3,finalizada,SEED-T2 orden de produccion
+156,OP-20260502-4,5,25,84,74,10,Panes quemados en horno,2026-05-02 05:45:00,3,finalizada,SEED-T2 orden de produccion
+157,OP-20260503-1,4,15,1098,985,113,Perdida normal de proceso,2026-05-03 04:30:00,3,finalizada,SEED-T2 orden de produccion
+158,OP-20260503-2,4,15,889,756,133,Piezas con deformacion en horneado,2026-05-03 15:00:00,3,finalizada,SEED-T2 orden de produccion
+159,OP-20260503-3,6,26,154,131,23,Piezas con deformacion en horneado,2026-05-03 05:15:00,3,finalizada,SEED-T2 orden de produccion
+160,OP-20260503-4,5,25,74,66,8,Perdida normal de proceso,2026-05-03 05:45:00,3,finalizada,SEED-T2 orden de produccion
+161,OP-20260504-1,4,15,752,663,89,Piezas con deformacion en horneado,2026-05-04 04:30:00,3,finalizada,SEED-T2 orden de produccion
+162,OP-20260504-2,4,15,620,522,98,Piezas con deformacion en horneado,2026-05-04 15:00:00,3,finalizada,SEED-T2 orden de produccion
+163,OP-20260504-3,6,26,105,92,13,Panes quemados en horno,2026-05-04 05:15:00,3,finalizada,SEED-T2 orden de produccion
+164,OP-20260504-4,5,25,66,56,10,Perdida normal de proceso,2026-05-04 05:45:00,3,finalizada,SEED-T2 orden de produccion
+165,OP-20260504-5,7,27,1,0,1,Piezas con deformacion en horneado,2026-05-04 09:00:00,3,finalizada,SEED-T2 orden de produccion
+166,OP-20260505-1,4,15,857,731,126,Panes quemados en horno,2026-05-05 04:30:00,3,finalizada,SEED-T2 orden de produccion
+167,OP-20260505-2,4,15,778,703,75,Panes quemados en horno,2026-05-05 15:00:00,3,finalizada,SEED-T2 orden de produccion
+168,OP-20260505-3,6,26,135,120,15,Piezas con deformacion en horneado,2026-05-05 05:15:00,3,finalizada,SEED-T2 orden de produccion
+169,OP-20260505-4,5,25,81,70,11,Panes quemados en horno,2026-05-05 05:45:00,3,finalizada,SEED-T2 orden de produccion
+170,OP-20260506-1,4,15,930,818,112,Perdida normal de proceso,2026-05-06 04:30:00,3,finalizada,SEED-T2 orden de produccion
+171,OP-20260506-2,4,15,686,586,100,Perdida normal de proceso,2026-05-06 15:00:00,3,finalizada,SEED-T2 orden de produccion
+172,OP-20260506-3,6,26,135,115,20,Panes quemados en horno,2026-05-06 05:15:00,3,finalizada,SEED-T2 orden de produccion
+173,OP-20260506-4,5,25,71,62,9,Panes quemados en horno,2026-05-06 05:45:00,3,finalizada,SEED-T2 orden de produccion
+174,OP-20260506-5,7,27,3,2,1,Panes quemados en horno,2026-05-06 09:00:00,3,finalizada,SEED-T2 orden de produccion
+175,OP-20260507-1,4,15,951,826,125,Panes quemados en horno,2026-05-07 04:30:00,3,finalizada,SEED-T2 orden de produccion
+176,OP-20260507-2,4,15,803,713,90,Caida durante manipulacion,2026-05-07 15:00:00,3,finalizada,SEED-T2 orden de produccion
+177,OP-20260507-3,6,26,124,107,17,Panes quemados en horno,2026-05-07 05:15:00,3,finalizada,SEED-T2 orden de produccion
+178,OP-20260507-4,5,25,81,72,9,Piezas con deformacion en horneado,2026-05-07 05:45:00,3,finalizada,SEED-T2 orden de produccion
+179,OP-20260507-5,7,27,4,3,1,Panes quemados en horno,2026-05-07 09:00:00,3,finalizada,SEED-T2 orden de produccion
+180,OP-20260508-1,4,15,948,816,132,Piezas con deformacion en horneado,2026-05-08 04:30:00,3,finalizada,SEED-T2 orden de produccion
+181,OP-20260508-2,4,15,778,708,70,Perdida normal de proceso,2026-05-08 15:00:00,3,finalizada,SEED-T2 orden de produccion
+182,OP-20260508-3,6,26,133,119,14,Panes quemados en horno,2026-05-08 05:15:00,3,finalizada,SEED-T2 orden de produccion
+183,OP-20260508-4,5,25,62,56,6,Piezas con deformacion en horneado,2026-05-08 05:45:00,3,finalizada,SEED-T2 orden de produccion
+184,OP-20260509-1,4,15,1170,1007,163,Panes quemados en horno,2026-05-09 04:30:00,3,finalizada,SEED-T2 orden de produccion
+185,OP-20260509-2,4,15,860,769,91,Piezas con deformacion en horneado,2026-05-09 15:00:00,3,finalizada,SEED-T2 orden de produccion
+186,OP-20260509-3,6,26,158,136,22,Panes quemados en horno,2026-05-09 05:15:00,3,finalizada,SEED-T2 orden de produccion
+187,OP-20260509-4,5,25,94,83,11,Panes quemados en horno,2026-05-09 05:45:00,3,finalizada,SEED-T2 orden de produccion
+188,OP-20260510-1,4,15,1162,1016,146,Panes quemados en horno,2026-05-10 04:30:00,3,finalizada,SEED-T2 orden de produccion
+189,OP-20260510-2,4,15,891,760,131,Panes quemados en horno,2026-05-10 15:00:00,3,finalizada,SEED-T2 orden de produccion
+190,OP-20260510-3,6,26,142,124,18,Perdida normal de proceso,2026-05-10 05:15:00,3,finalizada,SEED-T2 orden de produccion
+191,OP-20260510-4,5,25,80,71,9,Panes quemados en horno,2026-05-10 05:45:00,3,finalizada,SEED-T2 orden de produccion
+192,OP-20260511-1,4,15,853,745,108,Perdida normal de proceso,2026-05-11 04:30:00,3,finalizada,SEED-T2 orden de produccion
+193,OP-20260511-2,4,15,636,543,93,Panes quemados en horno,2026-05-11 15:00:00,3,finalizada,SEED-T2 orden de produccion
+194,OP-20260511-3,6,26,122,105,17,Piezas con deformacion en horneado,2026-05-11 05:15:00,3,finalizada,SEED-T2 orden de produccion
+195,OP-20260511-4,5,25,70,63,7,Panes quemados en horno,2026-05-11 05:45:00,3,finalizada,SEED-T2 orden de produccion
+196,OP-20260512-1,4,15,921,794,127,Panes quemados en horno,2026-05-12 04:30:00,3,finalizada,SEED-T2 orden de produccion
+197,OP-20260512-2,4,15,689,593,96,Panes quemados en horno,2026-05-12 15:00:00,3,finalizada,SEED-T2 orden de produccion
+198,OP-20260512-3,6,26,134,115,19,Piezas con deformacion en horneado,2026-05-12 05:15:00,3,finalizada,SEED-T2 orden de produccion
+199,OP-20260512-4,5,25,77,65,12,Piezas con deformacion en horneado,2026-05-12 05:45:00,3,finalizada,SEED-T2 orden de produccion
+200,OP-20260513-1,4,15,865,734,131,Panes quemados en horno,2026-05-13 04:30:00,3,finalizada,SEED-T2 orden de produccion
+201,OP-20260513-2,4,15,732,625,107,Piezas con deformacion en horneado,2026-05-13 15:00:00,3,finalizada,SEED-T2 orden de produccion
+202,OP-20260513-3,6,26,133,113,20,Piezas con deformacion en horneado,2026-05-13 05:15:00,3,finalizada,SEED-T2 orden de produccion
+203,OP-20260513-4,5,25,60,51,9,Piezas con deformacion en horneado,2026-05-13 05:45:00,3,finalizada,SEED-T2 orden de produccion
+204,OP-20260514-1,4,15,834,723,111,Perdida normal de proceso,2026-05-14 04:30:00,3,finalizada,SEED-T2 orden de produccion
+205,OP-20260514-2,4,15,714,645,69,Piezas con deformacion en horneado,2026-05-14 15:00:00,3,finalizada,SEED-T2 orden de produccion
+206,OP-20260514-3,6,26,130,109,21,Piezas con deformacion en horneado,2026-05-14 05:15:00,3,finalizada,SEED-T2 orden de produccion
+207,OP-20260514-4,5,25,73,62,11,Panes quemados en horno,2026-05-14 05:45:00,3,finalizada,SEED-T2 orden de produccion
+208,OP-20260514-5,7,27,1,0,1,Piezas con deformacion en horneado,2026-05-14 09:00:00,3,finalizada,SEED-T2 orden de produccion
+209,OP-20260515-1,4,15,826,703,123,Panes quemados en horno,2026-05-15 04:30:00,3,finalizada,SEED-T2 orden de produccion
+210,OP-20260515-2,4,15,781,672,109,Panes quemados en horno,2026-05-15 15:00:00,3,finalizada,SEED-T2 orden de produccion
+211,OP-20260515-3,6,26,153,138,15,Perdida normal de proceso,2026-05-15 05:15:00,3,finalizada,SEED-T2 orden de produccion
+212,OP-20260515-4,5,25,55,47,8,Perdida normal de proceso,2026-05-15 05:45:00,3,finalizada,SEED-T2 orden de produccion
+213,OP-20260516-1,4,15,1039,935,104,Perdida normal de proceso,2026-05-16 04:30:00,3,finalizada,SEED-T2 orden de produccion
+214,OP-20260516-2,4,15,948,831,117,Piezas con deformacion en horneado,2026-05-16 15:00:00,3,finalizada,SEED-T2 orden de produccion
+215,OP-20260516-3,6,26,184,164,20,Piezas con deformacion en horneado,2026-05-16 05:15:00,3,finalizada,SEED-T2 orden de produccion
+216,OP-20260516-4,5,25,71,63,8,Piezas con deformacion en horneado,2026-05-16 05:45:00,3,finalizada,SEED-T2 orden de produccion
+217,OP-20260516-5,7,27,3,2,1,Piezas con deformacion en horneado,2026-05-16 09:00:00,3,finalizada,SEED-T2 orden de produccion
+218,OP-20260517-1,4,15,1042,890,152,Piezas con deformacion en horneado,2026-05-17 04:30:00,3,finalizada,SEED-T2 orden de produccion
+219,OP-20260517-2,4,15,882,751,131,Piezas con deformacion en horneado,2026-05-17 15:00:00,3,finalizada,SEED-T2 orden de produccion
+220,OP-20260517-3,6,26,178,161,17,Panes quemados en horno,2026-05-17 05:15:00,3,finalizada,SEED-T2 orden de produccion
+221,OP-20260517-4,5,25,89,78,11,Panes quemados en horno,2026-05-17 05:45:00,3,finalizada,SEED-T2 orden de produccion
+222,OP-20260517-5,7,27,1,0,1,Piezas con deformacion en horneado,2026-05-17 09:00:00,3,finalizada,SEED-T2 orden de produccion
+223,OP-20260518-1,4,15,763,654,109,Panes quemados en horno,2026-05-18 04:30:00,3,finalizada,SEED-T2 orden de produccion
+224,OP-20260518-2,4,15,675,603,72,Piezas con deformacion en horneado,2026-05-18 15:00:00,3,finalizada,SEED-T2 orden de produccion
+225,OP-20260518-3,6,26,137,122,15,Perdida normal de proceso,2026-05-18 05:15:00,3,finalizada,SEED-T2 orden de produccion
+226,OP-20260518-4,5,25,70,63,7,Piezas con deformacion en horneado,2026-05-18 05:45:00,3,finalizada,SEED-T2 orden de produccion
+227,OP-20260519-1,4,15,860,768,92,Panes quemados en horno,2026-05-19 04:30:00,3,finalizada,SEED-T2 orden de produccion
+228,OP-20260519-2,4,15,805,686,119,Panes quemados en horno,2026-05-19 15:00:00,3,finalizada,SEED-T2 orden de produccion
+229,OP-20260519-3,6,26,135,121,14,Perdida normal de proceso,2026-05-19 05:15:00,3,finalizada,SEED-T2 orden de produccion
+230,OP-20260519-4,5,25,83,73,10,Perdida normal de proceso,2026-05-19 05:45:00,3,finalizada,SEED-T2 orden de produccion
+231,OP-20260520-1,4,15,928,830,98,Piezas con deformacion en horneado,2026-05-20 04:30:00,3,finalizada,SEED-T2 orden de produccion
+232,OP-20260520-2,4,15,762,661,101,Panes quemados en horno,2026-05-20 15:00:00,3,finalizada,SEED-T2 orden de produccion
+233,OP-20260520-3,6,26,146,126,20,Perdida normal de proceso,2026-05-20 05:15:00,3,finalizada,SEED-T2 orden de produccion
+234,OP-20260520-4,5,25,84,71,13,Perdida normal de proceso,2026-05-20 05:45:00,3,finalizada,SEED-T2 orden de produccion
+235,OP-20260520-5,7,27,2,1,1,Piezas con deformacion en horneado,2026-05-20 09:00:00,3,finalizada,SEED-T2 orden de produccion
+236,OP-20260521-1,4,15,832,747,85,Piezas con deformacion en horneado,2026-05-21 04:30:00,3,finalizada,SEED-T2 orden de produccion
+237,OP-20260521-2,4,15,754,663,91,Piezas con deformacion en horneado,2026-05-21 15:00:00,3,finalizada,SEED-T2 orden de produccion
+238,OP-20260521-3,6,26,138,121,17,Piezas con deformacion en horneado,2026-05-21 05:15:00,3,finalizada,SEED-T2 orden de produccion
+239,OP-20260521-4,5,25,71,63,8,Panes quemados en horno,2026-05-21 05:45:00,3,finalizada,SEED-T2 orden de produccion
+240,OP-20260521-5,7,27,3,2,1,Perdida normal de proceso,2026-05-21 09:00:00,3,finalizada,SEED-T2 orden de produccion
+241,OP-20260522-1,4,15,857,765,92,Panes quemados en horno,2026-05-22 04:30:00,3,finalizada,SEED-T2 orden de produccion
+242,OP-20260522-2,4,15,725,635,90,Panes quemados en horno,2026-05-22 15:00:00,3,finalizada,SEED-T2 orden de produccion
+243,OP-20260522-3,6,26,139,117,22,Panes quemados en horno,2026-05-22 05:15:00,3,finalizada,SEED-T2 orden de produccion
+244,OP-20260522-4,5,25,57,50,7,Perdida normal de proceso,2026-05-22 05:45:00,3,finalizada,SEED-T2 orden de produccion
+245,OP-20260523-1,4,15,1150,989,161,Panes quemados en horno,2026-05-23 04:30:00,3,finalizada,SEED-T2 orden de produccion
+246,OP-20260523-2,4,15,998,885,113,Piezas con deformacion en horneado,2026-05-23 15:00:00,3,finalizada,SEED-T2 orden de produccion
+247,OP-20260523-3,6,26,141,122,19,Panes quemados en horno,2026-05-23 05:15:00,3,finalizada,SEED-T2 orden de produccion
+248,OP-20260523-4,5,25,69,60,9,Panes quemados en horno,2026-05-23 05:45:00,3,finalizada,SEED-T2 orden de produccion
+249,OP-20260523-5,7,27,2,1,1,Panes quemados en horno,2026-05-23 09:00:00,3,finalizada,SEED-T2 orden de produccion
+250,OP-20260524-1,4,15,1036,920,116,Panes quemados en horno,2026-05-24 04:30:00,3,finalizada,SEED-T2 orden de produccion
+251,OP-20260524-2,4,15,858,778,80,Panes quemados en horno,2026-05-24 15:00:00,3,finalizada,SEED-T2 orden de produccion
+252,OP-20260524-3,6,26,149,127,22,Piezas con deformacion en horneado,2026-05-24 05:15:00,3,finalizada,SEED-T2 orden de produccion
+253,OP-20260524-4,5,25,96,81,15,Panes quemados en horno,2026-05-24 05:45:00,3,finalizada,SEED-T2 orden de produccion
+254,OP-20260524-5,7,27,1,0,1,Piezas con deformacion en horneado,2026-05-24 09:00:00,3,finalizada,SEED-T2 orden de produccion
+255,OP-20260525-1,4,15,825,701,124,Panes quemados en horno,2026-05-25 04:30:00,3,finalizada,SEED-T2 orden de produccion
+256,OP-20260525-2,4,15,668,572,96,Panes quemados en horno,2026-05-25 15:00:00,3,finalizada,SEED-T2 orden de produccion
+257,OP-20260525-3,6,26,126,112,14,Panes quemados en horno,2026-05-25 05:15:00,3,finalizada,SEED-T2 orden de produccion
+258,OP-20260525-4,5,25,52,47,5,Panes quemados en horno,2026-05-25 05:45:00,3,finalizada,SEED-T2 orden de produccion
+259,OP-20260525-5,7,27,1,0,1,Piezas con deformacion en horneado,2026-05-25 09:00:00,3,finalizada,SEED-T2 orden de produccion
+260,OP-20260526-1,4,15,958,866,92,Piezas con deformacion en horneado,2026-05-26 04:30:00,3,finalizada,SEED-T2 orden de produccion
+261,OP-20260526-2,4,15,786,662,124,Panes quemados en horno,2026-05-26 15:00:00,3,finalizada,SEED-T2 orden de produccion
+262,OP-20260526-3,6,26,118,102,16,Piezas con deformacion en horneado,2026-05-26 05:15:00,3,finalizada,SEED-T2 orden de produccion
+263,OP-20260526-4,5,25,60,54,6,Piezas con deformacion en horneado,2026-05-26 05:45:00,3,finalizada,SEED-T2 orden de produccion
+264,OP-20260526-5,7,27,2,1,1,Caida durante manipulacion,2026-05-26 09:00:00,3,finalizada,SEED-T2 orden de produccion
+265,OP-20260527-1,4,15,946,815,131,Perdida normal de proceso,2026-05-27 04:30:00,3,finalizada,SEED-T2 orden de produccion
+266,OP-20260527-2,4,15,767,669,98,Perdida normal de proceso,2026-05-27 15:00:00,3,finalizada,SEED-T2 orden de produccion
+267,OP-20260527-3,6,26,115,100,15,Perdida normal de proceso,2026-05-27 05:15:00,3,finalizada,SEED-T2 orden de produccion
+268,OP-20260527-4,5,25,56,49,7,Perdida normal de proceso,2026-05-27 05:45:00,3,finalizada,SEED-T2 orden de produccion
+269,OP-20260527-5,7,27,4,3,1,Piezas con deformacion en horneado,2026-05-27 09:00:00,3,finalizada,SEED-T2 orden de produccion
+270,OP-20260528-1,4,15,921,809,112,Panes quemados en horno,2026-05-28 04:30:00,3,finalizada,SEED-T2 orden de produccion
+271,OP-20260528-2,4,15,805,697,108,Panes quemados en horno,2026-05-28 15:00:00,3,finalizada,SEED-T2 orden de produccion
+272,OP-20260528-3,6,26,125,105,20,Perdida normal de proceso,2026-05-28 05:15:00,3,finalizada,SEED-T2 orden de produccion
+273,OP-20260528-4,5,25,77,67,10,Piezas con deformacion en horneado,2026-05-28 05:45:00,3,finalizada,SEED-T2 orden de produccion
+274,OP-20260528-5,7,27,3,2,1,Panes quemados en horno,2026-05-28 09:00:00,3,finalizada,SEED-T2 orden de produccion
+275,OP-20260529-1,4,15,850,747,103,Piezas con deformacion en horneado,2026-05-29 04:30:00,3,finalizada,SEED-T2 orden de produccion
+276,OP-20260529-2,4,15,749,662,87,Panes quemados en horno,2026-05-29 15:00:00,3,finalizada,SEED-T2 orden de produccion
+277,OP-20260529-3,6,26,110,97,13,Perdida normal de proceso,2026-05-29 05:15:00,3,finalizada,SEED-T2 orden de produccion
+278,OP-20260529-4,5,25,67,60,7,Panes quemados en horno,2026-05-29 05:45:00,3,finalizada,SEED-T2 orden de produccion
+279,OP-20260530-1,4,15,1195,1010,185,Perdida normal de proceso,2026-05-30 04:30:00,3,finalizada,SEED-T2 orden de produccion
+280,OP-20260530-2,4,15,856,766,90,Piezas con deformacion en horneado,2026-05-30 15:00:00,3,finalizada,SEED-T2 orden de produccion
+281,OP-20260530-3,6,26,162,143,19,Piezas con deformacion en horneado,2026-05-30 05:15:00,3,finalizada,SEED-T2 orden de produccion
+282,OP-20260530-4,5,25,74,64,10,Perdida normal de proceso,2026-05-30 05:45:00,3,finalizada,SEED-T2 orden de produccion
+283,OP-20260531-1,4,15,1124,1001,123,Piezas con deformacion en horneado,2026-05-31 04:30:00,3,finalizada,SEED-T2 orden de produccion
+284,OP-20260531-2,4,15,945,834,111,Panes quemados en horno,2026-05-31 15:00:00,3,finalizada,SEED-T2 orden de produccion
+285,OP-20260531-3,6,26,175,149,26,Panes quemados en horno,2026-05-31 05:15:00,3,finalizada,SEED-T2 orden de produccion
+286,OP-20260531-4,5,25,102,88,14,Panes quemados en horno,2026-05-31 05:45:00,3,finalizada,SEED-T2 orden de produccion
+287,OP-20260601-1,4,15,811,718,93,Perdida normal de proceso,2026-06-01 04:30:00,3,finalizada,SEED-T2 orden de produccion
+288,OP-20260601-2,4,15,686,619,67,Caida durante manipulacion,2026-06-01 15:00:00,3,finalizada,SEED-T2 orden de produccion
+289,OP-20260601-3,6,26,118,101,17,Panes quemados en horno,2026-06-01 05:15:00,3,finalizada,SEED-T2 orden de produccion
+290,OP-20260601-4,5,25,74,62,12,Panes quemados en horno,2026-06-01 05:45:00,3,finalizada,SEED-T2 orden de produccion
+291,OP-20260602-1,4,15,940,830,110,Panes quemados en horno,2026-06-02 04:30:00,3,finalizada,SEED-T2 orden de produccion
+292,OP-20260602-2,4,15,734,659,75,Piezas con deformacion en horneado,2026-06-02 15:00:00,3,finalizada,SEED-T2 orden de produccion
+293,OP-20260602-3,6,26,152,138,14,Panes quemados en horno,2026-06-02 05:15:00,3,finalizada,SEED-T2 orden de produccion
+294,OP-20260602-4,5,25,61,54,7,Panes quemados en horno,2026-06-02 05:45:00,3,finalizada,SEED-T2 orden de produccion
+295,OP-20260603-1,4,15,940,826,114,Piezas con deformacion en horneado,2026-06-03 04:30:00,3,finalizada,SEED-T2 orden de produccion
+296,OP-20260603-2,4,15,705,600,105,Piezas con deformacion en horneado,2026-06-03 15:00:00,3,finalizada,SEED-T2 orden de produccion
+297,OP-20260603-3,6,26,136,119,17,Piezas con deformacion en horneado,2026-06-03 05:15:00,3,finalizada,SEED-T2 orden de produccion
+298,OP-20260603-4,5,25,64,57,7,Piezas con deformacion en horneado,2026-06-03 05:45:00,3,finalizada,SEED-T2 orden de produccion
+299,OP-20260603-5,7,27,4,3,1,Perdida normal de proceso,2026-06-03 09:00:00,3,finalizada,SEED-T2 orden de produccion
+300,OP-20260604-1,4,15,899,757,142,Panes quemados en horno,2026-06-04 04:30:00,3,finalizada,SEED-T2 orden de produccion
+301,OP-20260604-2,4,15,797,724,73,Panes quemados en horno,2026-06-04 15:00:00,3,finalizada,SEED-T2 orden de produccion
+302,OP-20260604-3,6,26,151,133,18,Panes quemados en horno,2026-06-04 05:15:00,3,finalizada,SEED-T2 orden de produccion
+303,OP-20260604-4,5,25,84,75,9,Panes quemados en horno,2026-06-04 05:45:00,3,finalizada,SEED-T2 orden de produccion
+304,OP-20260604-5,7,27,1,0,1,Panes quemados en horno,2026-06-04 09:00:00,3,finalizada,SEED-T2 orden de produccion
+305,OP-20260605-1,4,15,847,712,135,Panes quemados en horno,2026-06-05 04:30:00,3,finalizada,SEED-T2 orden de produccion
+306,OP-20260605-2,4,15,792,709,83,Caida durante manipulacion,2026-06-05 15:00:00,3,finalizada,SEED-T2 orden de produccion
+307,OP-20260605-3,6,26,137,122,15,Piezas con deformacion en horneado,2026-06-05 05:15:00,3,finalizada,SEED-T2 orden de produccion
+308,OP-20260605-4,5,25,65,58,7,Perdida normal de proceso,2026-06-05 05:45:00,3,finalizada,SEED-T2 orden de produccion
+309,OP-20260605-5,7,27,1,0,1,Panes quemados en horno,2026-06-05 09:00:00,3,finalizada,SEED-T2 orden de produccion
+310,OP-20260606-1,4,15,1186,1030,156,Panes quemados en horno,2026-06-06 04:30:00,3,finalizada,SEED-T2 orden de produccion
+311,OP-20260606-2,4,15,884,777,107,Perdida normal de proceso,2026-06-06 15:00:00,3,finalizada,SEED-T2 orden de produccion
+312,OP-20260606-3,6,26,190,161,29,Piezas con deformacion en horneado,2026-06-06 05:15:00,3,finalizada,SEED-T2 orden de produccion
+313,OP-20260606-4,5,25,91,80,11,Piezas con deformacion en horneado,2026-06-06 05:45:00,3,finalizada,SEED-T2 orden de produccion
+314,OP-20260606-5,7,27,3,2,1,Caida durante manipulacion,2026-06-06 09:00:00,3,finalizada,SEED-T2 orden de produccion
+315,OP-20260607-1,4,15,1164,1053,111,Perdida normal de proceso,2026-06-07 04:30:00,3,finalizada,SEED-T2 orden de produccion
+316,OP-20260607-2,4,15,981,871,110,Panes quemados en horno,2026-06-07 15:00:00,3,finalizada,SEED-T2 orden de produccion
+317,OP-20260607-3,6,26,170,147,23,Panes quemados en horno,2026-06-07 05:15:00,3,finalizada,SEED-T2 orden de produccion
+318,OP-20260607-4,5,25,92,82,10,Piezas con deformacion en horneado,2026-06-07 05:45:00,3,finalizada,SEED-T2 orden de produccion
+319,OP-20260607-5,7,27,1,0,1,Caida durante manipulacion,2026-06-07 09:00:00,3,finalizada,SEED-T2 orden de produccion
+320,OP-20260608-1,4,15,788,686,102,Piezas con deformacion en horneado,2026-06-08 04:30:00,3,finalizada,SEED-T2 orden de produccion
+321,OP-20260608-2,4,15,672,572,100,Perdida normal de proceso,2026-06-08 15:00:00,3,finalizada,SEED-T2 orden de produccion
+322,OP-20260608-3,6,26,130,117,13,Panes quemados en horno,2026-06-08 05:15:00,3,finalizada,SEED-T2 orden de produccion
+323,OP-20260608-4,5,25,51,44,7,Perdida normal de proceso,2026-06-08 05:45:00,3,finalizada,SEED-T2 orden de produccion
+324,OP-20260609-1,4,15,907,787,120,Panes quemados en horno,2026-06-09 04:30:00,3,finalizada,SEED-T2 orden de produccion
+325,OP-20260609-2,4,15,780,680,100,Panes quemados en horno,2026-06-09 15:00:00,3,finalizada,SEED-T2 orden de produccion
+326,OP-20260609-3,6,26,117,100,17,Perdida normal de proceso,2026-06-09 05:15:00,3,finalizada,SEED-T2 orden de produccion
+327,OP-20260609-4,5,25,77,70,7,Panes quemados en horno,2026-06-09 05:45:00,3,finalizada,SEED-T2 orden de produccion
+328,OP-20260609-5,7,27,2,1,1,Piezas con deformacion en horneado,2026-06-09 09:00:00,3,finalizada,SEED-T2 orden de produccion
+329,OP-20260610-1,4,15,914,824,90,Piezas con deformacion en horneado,2026-06-10 04:30:00,3,finalizada,SEED-T2 orden de produccion
+330,OP-20260610-2,4,15,723,633,90,Caida durante manipulacion,2026-06-10 15:00:00,3,finalizada,SEED-T2 orden de produccion
+331,OP-20260610-3,6,26,141,119,22,Perdida normal de proceso,2026-06-10 05:15:00,3,finalizada,SEED-T2 orden de produccion
+332,OP-20260610-4,5,25,69,58,11,Panes quemados en horno,2026-06-10 05:45:00,3,finalizada,SEED-T2 orden de produccion
+333,OP-20260611-1,4,15,879,786,93,Piezas con deformacion en horneado,2026-06-11 04:30:00,3,finalizada,SEED-T2 orden de produccion
+334,OP-20260611-2,4,15,719,614,105,Panes quemados en horno,2026-06-11 15:00:00,3,finalizada,SEED-T2 orden de produccion
+335,OP-20260611-3,6,26,115,102,13,Panes quemados en horno,2026-06-11 05:15:00,3,finalizada,SEED-T2 orden de produccion
+336,OP-20260611-4,5,25,62,55,7,Panes quemados en horno,2026-06-11 05:45:00,3,finalizada,SEED-T2 orden de produccion
+337,OP-20260612-1,4,15,907,773,134,Panes quemados en horno,2026-06-12 04:30:00,3,finalizada,SEED-T2 orden de produccion
+338,OP-20260612-2,4,15,755,672,83,Piezas con deformacion en horneado,2026-06-12 15:00:00,3,finalizada,SEED-T2 orden de produccion
+339,OP-20260612-3,6,26,137,120,17,Perdida normal de proceso,2026-06-12 05:15:00,3,finalizada,SEED-T2 orden de produccion
+340,OP-20260612-4,5,25,64,57,7,Perdida normal de proceso,2026-06-12 05:45:00,3,finalizada,SEED-T2 orden de produccion
+341,OP-20260612-5,7,27,3,2,1,Perdida normal de proceso,2026-06-12 09:00:00,3,finalizada,SEED-T2 orden de produccion
+342,OP-20260613-1,4,15,1026,866,160,Perdida normal de proceso,2026-06-13 04:30:00,3,finalizada,SEED-T2 orden de produccion
+343,OP-20260613-2,4,15,905,767,138,Panes quemados en horno,2026-06-13 15:00:00,3,finalizada,SEED-T2 orden de produccion
+344,OP-20260613-3,6,26,162,136,26,Piezas con deformacion en horneado,2026-06-13 05:15:00,3,finalizada,SEED-T2 orden de produccion
+345,OP-20260613-4,5,25,75,67,8,Panes quemados en horno,2026-06-13 05:45:00,3,finalizada,SEED-T2 orden de produccion
+346,OP-20260614-1,4,15,1079,945,134,Piezas con deformacion en horneado,2026-06-14 04:30:00,3,finalizada,SEED-T2 orden de produccion
+347,OP-20260614-2,4,15,989,897,92,Piezas con deformacion en horneado,2026-06-14 15:00:00,3,finalizada,SEED-T2 orden de produccion
+348,OP-20260614-3,6,26,145,132,13,Piezas con deformacion en horneado,2026-06-14 05:15:00,3,finalizada,SEED-T2 orden de produccion
+349,OP-20260614-4,5,25,86,75,11,Panes quemados en horno,2026-06-14 05:45:00,3,finalizada,SEED-T2 orden de produccion
+350,OP-20260615-1,4,15,796,683,113,Panes quemados en horno,2026-06-15 04:30:00,3,finalizada,SEED-T2 orden de produccion
+351,OP-20260615-2,4,15,663,595,68,Piezas con deformacion en horneado,2026-06-15 15:00:00,3,finalizada,SEED-T2 orden de produccion
+352,OP-20260615-3,6,26,120,108,12,Panes quemados en horno,2026-06-15 05:15:00,3,finalizada,SEED-T2 orden de produccion
+353,OP-20260615-4,5,25,58,50,8,Piezas con deformacion en horneado,2026-06-15 05:45:00,3,finalizada,SEED-T2 orden de produccion
+354,OP-20260616-1,4,15,914,828,86,Panes quemados en horno,2026-06-16 04:30:00,3,finalizada,SEED-T2 orden de produccion
+355,OP-20260616-2,4,15,704,634,70,Panes quemados en horno,2026-06-16 15:00:00,3,finalizada,SEED-T2 orden de produccion
+356,OP-20260616-3,6,26,115,103,12,Perdida normal de proceso,2026-06-16 05:15:00,3,finalizada,SEED-T2 orden de produccion
+357,OP-20260616-4,5,25,72,63,9,Piezas con deformacion en horneado,2026-06-16 05:45:00,3,finalizada,SEED-T2 orden de produccion
+358,OP-20260617-1,4,15,870,787,83,Panes quemados en horno,2026-06-17 04:30:00,3,finalizada,SEED-T2 orden de produccion
+359,OP-20260617-2,4,15,692,597,95,Panes quemados en horno,2026-06-17 15:00:00,3,finalizada,SEED-T2 orden de produccion
+360,OP-20260617-3,6,26,139,118,21,Perdida normal de proceso,2026-06-17 05:15:00,3,finalizada,SEED-T2 orden de produccion
+361,OP-20260617-4,5,25,76,67,9,Panes quemados en horno,2026-06-17 05:45:00,3,finalizada,SEED-T2 orden de produccion
+362,OP-20260618-1,4,15,927,818,109,Piezas con deformacion en horneado,2026-06-18 04:30:00,3,finalizada,SEED-T2 orden de produccion
+363,OP-20260618-2,4,15,806,720,86,Panes quemados en horno,2026-06-18 15:00:00,3,finalizada,SEED-T2 orden de produccion
+364,OP-20260618-3,6,26,146,131,15,Panes quemados en horno,2026-06-18 05:15:00,3,finalizada,SEED-T2 orden de produccion
+365,OP-20260618-4,5,25,69,62,7,Piezas con deformacion en horneado,2026-06-18 05:45:00,3,finalizada,SEED-T2 orden de produccion
+366,OP-20260619-1,4,15,822,737,85,Piezas con deformacion en horneado,2026-06-19 04:30:00,3,finalizada,SEED-T2 orden de produccion
+367,OP-20260619-2,4,15,768,693,75,Piezas con deformacion en horneado,2026-06-19 15:00:00,3,finalizada,SEED-T2 orden de produccion
+368,OP-20260619-3,6,26,141,124,17,Panes quemados en horno,2026-06-19 05:15:00,3,finalizada,SEED-T2 orden de produccion
+369,OP-20260619-4,5,25,68,58,10,Panes quemados en horno,2026-06-19 05:45:00,3,finalizada,SEED-T2 orden de produccion
+370,OP-20260619-5,7,27,1,0,1,Panes quemados en horno,2026-06-19 09:00:00,3,finalizada,SEED-T2 orden de produccion
+371,OP-20260620-1,4,15,1150,1029,121,Perdida normal de proceso,2026-06-20 04:30:00,3,finalizada,SEED-T2 orden de produccion
+372,OP-20260620-2,4,15,931,830,101,Piezas con deformacion en horneado,2026-06-20 15:00:00,3,finalizada,SEED-T2 orden de produccion
+373,OP-20260620-3,6,26,179,162,17,Panes quemados en horno,2026-06-20 05:15:00,3,finalizada,SEED-T2 orden de produccion
+374,OP-20260620-4,5,25,70,63,7,Perdida normal de proceso,2026-06-20 05:45:00,3,finalizada,SEED-T2 orden de produccion
+375,OP-20260621-1,4,15,1181,1026,155,Panes quemados en horno,2026-06-21 04:30:00,3,finalizada,SEED-T2 orden de produccion
+376,OP-20260621-2,4,15,946,850,96,Piezas con deformacion en horneado,2026-06-21 15:00:00,3,finalizada,SEED-T2 orden de produccion
+377,OP-20260621-3,6,26,166,149,17,Panes quemados en horno,2026-06-21 05:15:00,3,finalizada,SEED-T2 orden de produccion
+378,OP-20260621-4,5,25,84,73,11,Panes quemados en horno,2026-06-21 05:45:00,3,finalizada,SEED-T2 orden de produccion
+379,OP-20260621-5,7,27,2,1,1,Piezas con deformacion en horneado,2026-06-21 09:00:00,3,finalizada,SEED-T2 orden de produccion
+380,OP-20260622-1,4,15,743,645,98,Piezas con deformacion en horneado,2026-06-22 04:30:00,3,finalizada,SEED-T2 orden de produccion
+381,OP-20260622-2,4,15,680,588,92,Piezas con deformacion en horneado,2026-06-22 15:00:00,3,finalizada,SEED-T2 orden de produccion
+382,OP-20260622-3,6,26,112,95,17,Piezas con deformacion en horneado,2026-06-22 05:15:00,3,finalizada,SEED-T2 orden de produccion
+383,OP-20260622-4,5,25,75,63,12,Perdida normal de proceso,2026-06-22 05:45:00,3,finalizada,SEED-T2 orden de produccion
+384,OP-20260623-1,4,15,871,789,82,Panes quemados en horno,2026-06-23 04:30:00,3,finalizada,SEED-T2 orden de produccion
+385,OP-20260623-2,4,15,799,676,123,Piezas con deformacion en horneado,2026-06-23 15:00:00,3,finalizada,SEED-T2 orden de produccion
+386,OP-20260623-3,6,26,143,126,17,Piezas con deformacion en horneado,2026-06-23 05:15:00,3,finalizada,SEED-T2 orden de produccion
+387,OP-20260623-4,5,25,83,72,11,Piezas con deformacion en horneado,2026-06-23 05:45:00,3,finalizada,SEED-T2 orden de produccion
+388,OP-20260624-1,4,15,879,754,125,Piezas con deformacion en horneado,2026-06-24 04:30:00,3,finalizada,SEED-T2 orden de produccion
+389,OP-20260624-2,4,15,776,671,105,Panes quemados en horno,2026-06-24 15:00:00,3,finalizada,SEED-T2 orden de produccion
+390,OP-20260624-3,6,26,122,109,13,Panes quemados en horno,2026-06-24 05:15:00,3,finalizada,SEED-T2 orden de produccion
+391,OP-20260624-4,5,25,83,71,12,Perdida normal de proceso,2026-06-24 05:45:00,3,finalizada,SEED-T2 orden de produccion
+392,OP-20260625-1,4,15,883,760,123,Panes quemados en horno,2026-06-25 04:30:00,3,finalizada,SEED-T2 orden de produccion
+393,OP-20260625-2,4,15,750,666,84,Caida durante manipulacion,2026-06-25 15:00:00,3,finalizada,SEED-T2 orden de produccion
+394,OP-20260625-3,6,26,145,130,15,Panes quemados en horno,2026-06-25 05:15:00,3,finalizada,SEED-T2 orden de produccion
+395,OP-20260625-4,5,25,59,50,9,Perdida normal de proceso,2026-06-25 05:45:00,3,finalizada,SEED-T2 orden de produccion
+396,OP-20260626-1,4,15,937,807,130,Perdida normal de proceso,2026-06-26 04:30:00,3,finalizada,SEED-T2 orden de produccion
+397,OP-20260626-2,4,15,799,700,99,Perdida normal de proceso,2026-06-26 15:00:00,3,finalizada,SEED-T2 orden de produccion
+398,OP-20260626-3,6,26,137,121,16,Panes quemados en horno,2026-06-26 05:15:00,3,finalizada,SEED-T2 orden de produccion
+399,OP-20260626-4,5,25,55,46,9,Piezas con deformacion en horneado,2026-06-26 05:45:00,3,finalizada,SEED-T2 orden de produccion
+400,OP-20260627-1,4,15,1050,930,120,Panes quemados en horno,2026-06-27 04:30:00,3,finalizada,SEED-T2 orden de produccion
+401,OP-20260627-2,4,15,924,816,108,Perdida normal de proceso,2026-06-27 15:00:00,3,finalizada,SEED-T2 orden de produccion
+402,OP-20260627-3,6,26,161,145,16,Panes quemados en horno,2026-06-27 05:15:00,3,finalizada,SEED-T2 orden de produccion
+403,OP-20260627-4,5,25,102,87,15,Perdida normal de proceso,2026-06-27 05:45:00,3,finalizada,SEED-T2 orden de produccion
+404,OP-20260627-5,7,27,3,2,1,Panes quemados en horno,2026-06-27 09:00:00,3,finalizada,SEED-T2 orden de produccion
+405,OP-20260628-1,4,15,1132,999,133,Panes quemados en horno,2026-06-28 04:30:00,3,finalizada,SEED-T2 orden de produccion
+406,OP-20260628-2,4,15,915,789,126,Panes quemados en horno,2026-06-28 15:00:00,3,finalizada,SEED-T2 orden de produccion
+407,OP-20260628-3,6,26,188,159,29,Piezas con deformacion en horneado,2026-06-28 05:15:00,3,finalizada,SEED-T2 orden de produccion
+408,OP-20260628-4,5,25,86,72,14,Panes quemados en horno,2026-06-28 05:45:00,3,finalizada,SEED-T2 orden de produccion
+409,OP-20260629-1,4,15,858,743,115,Panes quemados en horno,2026-06-29 04:30:00,3,finalizada,SEED-T2 orden de produccion
+410,OP-20260629-2,4,15,674,574,100,Piezas con deformacion en horneado,2026-06-29 15:00:00,3,finalizada,SEED-T2 orden de produccion
+411,OP-20260629-3,6,26,108,98,10,Panes quemados en horno,2026-06-29 05:15:00,3,finalizada,SEED-T2 orden de produccion
+412,OP-20260629-4,5,25,73,65,8,Panes quemados en horno,2026-06-29 05:45:00,3,finalizada,SEED-T2 orden de produccion
+413,OP-20260630-1,4,15,873,788,85,Panes quemados en horno,2026-06-30 04:30:00,3,finalizada,SEED-T2 orden de produccion
+414,OP-20260630-2,4,15,748,652,96,Panes quemados en horno,2026-06-30 15:00:00,3,finalizada,SEED-T2 orden de produccion
+415,OP-20260630-3,6,26,154,134,20,Panes quemados en horno,2026-06-30 05:15:00,3,finalizada,SEED-T2 orden de produccion
+416,OP-20260630-4,5,25,72,62,10,Panes quemados en horno,2026-06-30 05:45:00,3,finalizada,SEED-T2 orden de produccion
+417,OP-20260701-1,4,15,837,723,114,Perdida normal de proceso,2026-07-01 04:30:00,3,finalizada,SEED-T2 orden de produccion
+418,OP-20260701-2,4,15,713,604,109,Perdida normal de proceso,2026-07-01 15:00:00,3,finalizada,SEED-T2 orden de produccion
+419,OP-20260701-3,6,26,126,112,14,Piezas con deformacion en horneado,2026-07-01 05:15:00,3,finalizada,SEED-T2 orden de produccion
+420,OP-20260701-4,5,25,70,60,10,Piezas con deformacion en horneado,2026-07-01 05:45:00,3,finalizada,SEED-T2 orden de produccion
+421,OP-20260702-1,4,15,857,721,136,Panes quemados en horno,2026-07-02 04:30:00,3,finalizada,SEED-T2 orden de produccion
+422,OP-20260702-2,4,15,738,670,68,Piezas con deformacion en horneado,2026-07-02 15:00:00,3,finalizada,SEED-T2 orden de produccion
+423,OP-20260702-3,6,26,148,134,14,Perdida normal de proceso,2026-07-02 05:15:00,3,finalizada,SEED-T2 orden de produccion
+424,OP-20260702-4,5,25,70,61,9,Perdida normal de proceso,2026-07-02 05:45:00,3,finalizada,SEED-T2 orden de produccion
+425,OP-20260703-1,4,15,820,735,85,Piezas con deformacion en horneado,2026-07-03 04:30:00,3,finalizada,SEED-T2 orden de produccion
+426,OP-20260703-2,4,15,748,657,91,Perdida normal de proceso,2026-07-03 15:00:00,3,finalizada,SEED-T2 orden de produccion
+427,OP-20260703-3,6,26,126,106,20,Piezas con deformacion en horneado,2026-07-03 05:15:00,3,finalizada,SEED-T2 orden de produccion
+428,OP-20260703-4,5,25,83,74,9,Perdida normal de proceso,2026-07-03 05:45:00,3,finalizada,SEED-T2 orden de produccion
+429,OP-20260703-5,7,27,2,1,1,Panes quemados en horno,2026-07-03 09:00:00,3,finalizada,SEED-T2 orden de produccion
+430,OP-20260704-1,4,15,1192,1023,169,Perdida normal de proceso,2026-07-04 04:30:00,3,finalizada,SEED-T2 orden de produccion
+431,OP-20260704-2,4,15,1009,902,107,Panes quemados en horno,2026-07-04 15:00:00,3,finalizada,SEED-T2 orden de produccion
+432,OP-20260704-3,6,26,160,141,19,Piezas con deformacion en horneado,2026-07-04 05:15:00,3,finalizada,SEED-T2 orden de produccion
+433,OP-20260704-4,5,25,91,81,10,Piezas con deformacion en horneado,2026-07-04 05:45:00,3,finalizada,SEED-T2 orden de produccion
+434,OP-20260704-5,7,27,3,2,1,Panes quemados en horno,2026-07-04 09:00:00,3,finalizada,SEED-T2 orden de produccion
+435,OP-20260705-1,4,15,1168,1040,128,Perdida normal de proceso,2026-07-05 04:30:00,3,finalizada,SEED-T2 orden de produccion
+436,OP-20260705-2,4,15,882,801,81,Piezas con deformacion en horneado,2026-07-05 15:00:00,3,finalizada,SEED-T2 orden de produccion
+437,OP-20260705-3,6,26,158,136,22,Perdida normal de proceso,2026-07-05 05:15:00,3,finalizada,SEED-T2 orden de produccion
+438,OP-20260705-4,5,25,86,77,9,Perdida normal de proceso,2026-07-05 05:45:00,3,finalizada,SEED-T2 orden de produccion
+439,OP-20260706-1,4,15,845,733,112,Caida durante manipulacion,2026-07-06 04:30:00,3,finalizada,SEED-T2 orden de produccion
+440,OP-20260706-2,4,15,706,639,67,Piezas con deformacion en horneado,2026-07-06 15:00:00,3,finalizada,SEED-T2 orden de produccion
+441,OP-20260706-3,6,26,137,118,19,Perdida normal de proceso,2026-07-06 05:15:00,3,finalizada,SEED-T2 orden de produccion
+442,OP-20260706-4,5,25,56,51,5,Piezas con deformacion en horneado,2026-07-06 05:45:00,3,finalizada,SEED-T2 orden de produccion
+443,OP-20260707-1,4,15,827,748,79,Panes quemados en horno,2026-07-07 04:30:00,3,finalizada,SEED-T2 orden de produccion
+444,OP-20260707-2,4,15,684,603,81,Piezas con deformacion en horneado,2026-07-07 15:00:00,3,finalizada,SEED-T2 orden de produccion
+445,OP-20260707-3,6,26,151,127,24,Perdida normal de proceso,2026-07-07 05:15:00,3,finalizada,SEED-T2 orden de produccion
+446,OP-20260707-4,5,25,63,55,8,Panes quemados en horno,2026-07-07 05:45:00,3,finalizada,SEED-T2 orden de produccion
+447,OP-20260707-5,7,27,4,3,1,Perdida normal de proceso,2026-07-07 09:00:00,3,finalizada,SEED-T2 orden de produccion
+448,OP-20260708-1,4,15,944,793,151,Panes quemados en horno,2026-07-08 04:30:00,3,finalizada,SEED-T2 orden de produccion
+449,OP-20260708-2,4,15,750,641,109,Panes quemados en horno,2026-07-08 15:00:00,3,finalizada,SEED-T2 orden de produccion
+450,OP-20260708-3,6,26,127,108,19,Panes quemados en horno,2026-07-08 05:15:00,3,finalizada,SEED-T2 orden de produccion
+451,OP-20260708-4,5,25,83,73,10,Piezas con deformacion en horneado,2026-07-08 05:45:00,3,finalizada,SEED-T2 orden de produccion
+452,OP-20260708-5,7,27,3,2,1,Piezas con deformacion en horneado,2026-07-08 09:00:00,3,finalizada,SEED-T2 orden de produccion
+453,OP-20260709-1,4,15,864,774,90,Panes quemados en horno,2026-07-09 04:30:00,3,finalizada,SEED-T2 orden de produccion
+454,OP-20260709-2,4,15,787,669,118,Piezas con deformacion en horneado,2026-07-09 15:00:00,3,finalizada,SEED-T2 orden de produccion
+455,OP-20260709-3,6,26,141,125,16,Panes quemados en horno,2026-07-09 05:15:00,3,finalizada,SEED-T2 orden de produccion
+456,OP-20260709-4,5,25,76,66,10,Perdida normal de proceso,2026-07-09 05:45:00,3,finalizada,SEED-T2 orden de produccion
+457,OP-20260710-1,4,15,835,759,76,Perdida normal de proceso,2026-07-10 04:30:00,3,finalizada,SEED-T2 orden de produccion
+458,OP-20260710-2,4,15,714,610,104,Panes quemados en horno,2026-07-10 15:00:00,3,finalizada,SEED-T2 orden de produccion
+459,OP-20260710-3,6,26,129,111,18,Panes quemados en horno,2026-07-10 05:15:00,3,finalizada,SEED-T2 orden de produccion
+460,OP-20260710-4,5,25,63,55,8,Piezas con deformacion en horneado,2026-07-10 05:45:00,3,finalizada,SEED-T2 orden de produccion
+461,OP-20260710-5,7,27,3,2,1,Panes quemados en horno,2026-07-10 09:00:00,3,finalizada,SEED-T2 orden de produccion
+462,OP-20260711-1,4,15,1095,941,154,Panes quemados en horno,2026-07-11 04:30:00,3,finalizada,SEED-T2 orden de produccion
+463,OP-20260711-2,4,15,961,851,110,Piezas con deformacion en horneado,2026-07-11 15:00:00,3,finalizada,SEED-T2 orden de produccion
+464,OP-20260711-3,6,26,170,143,27,Piezas con deformacion en horneado,2026-07-11 05:15:00,3,finalizada,SEED-T2 orden de produccion
+465,OP-20260711-4,5,25,72,63,9,Perdida normal de proceso,2026-07-11 05:45:00,3,finalizada,SEED-T2 orden de produccion
+466,OP-20260711-5,7,27,1,0,1,Panes quemados en horno,2026-07-11 09:00:00,3,finalizada,SEED-T2 orden de produccion
+467,OP-20260712-1,4,15,1051,922,129,Perdida normal de proceso,2026-07-12 04:30:00,3,finalizada,SEED-T2 orden de produccion
+468,OP-20260712-2,4,15,894,772,122,Piezas con deformacion en horneado,2026-07-12 15:00:00,3,finalizada,SEED-T2 orden de produccion
+469,OP-20260712-3,6,26,144,131,13,Perdida normal de proceso,2026-07-12 05:15:00,3,finalizada,SEED-T2 orden de produccion
+470,OP-20260712-4,5,25,105,89,16,Panes quemados en horno,2026-07-12 05:45:00,3,finalizada,SEED-T2 orden de produccion
+471,OP-20260712-5,7,27,4,3,1,Panes quemados en horno,2026-07-12 09:00:00,3,finalizada,SEED-T2 orden de produccion
+472,OP-20260713-1,4,15,827,736,91,Panes quemados en horno,2026-07-13 04:30:00,3,finalizada,SEED-T2 orden de produccion
+473,OP-20260713-2,4,15,704,594,110,Panes quemados en horno,2026-07-13 15:00:00,3,finalizada,SEED-T2 orden de produccion
+474,OP-20260713-3,6,26,101,91,10,Piezas con deformacion en horneado,2026-07-13 05:15:00,3,finalizada,SEED-T2 orden de produccion
+475,OP-20260713-4,5,25,71,62,9,Panes quemados en horno,2026-07-13 05:45:00,3,finalizada,SEED-T2 orden de produccion
+476,OP-20260713-5,7,27,3,2,1,Piezas con deformacion en horneado,2026-07-13 09:00:00,3,finalizada,SEED-T2 orden de produccion
+477,OP-20260714-1,4,15,882,779,103,Perdida normal de proceso,2026-07-14 04:30:00,3,finalizada,SEED-T2 orden de produccion
+478,OP-20260714-2,4,15,721,641,80,Caida durante manipulacion,2026-07-14 15:00:00,3,finalizada,SEED-T2 orden de produccion
+479,OP-20260714-3,6,26,132,113,19,Panes quemados en horno,2026-07-14 05:15:00,3,finalizada,SEED-T2 orden de produccion
+480,OP-20260714-4,5,25,61,55,6,Piezas con deformacion en horneado,2026-07-14 05:45:00,3,finalizada,SEED-T2 orden de produccion
+481,OP-20260714-5,7,27,3,2,1,Panes quemados en horno,2026-07-14 09:00:00,3,finalizada,SEED-T2 orden de produccion
+482,OP-20260715-1,4,15,864,766,98,Piezas con deformacion en horneado,2026-07-15 04:30:00,3,finalizada,SEED-T2 orden de produccion
+483,OP-20260715-2,4,15,703,612,91,Panes quemados en horno,2026-07-15 15:00:00,3,finalizada,SEED-T2 orden de produccion
+484,OP-20260715-3,6,26,146,131,15,Panes quemados en horno,2026-07-15 05:15:00,3,finalizada,SEED-T2 orden de produccion
+485,OP-20260715-4,5,25,57,50,7,Perdida normal de proceso,2026-07-15 05:45:00,3,finalizada,SEED-T2 orden de produccion
+486,OP-20260715-5,7,27,4,3,1,Panes quemados en horno,2026-07-15 09:00:00,3,finalizada,SEED-T2 orden de produccion
+487,OP-20260716-1,4,15,920,810,110,Perdida normal de proceso,2026-07-16 04:30:00,3,finalizada,SEED-T2 orden de produccion
+488,OP-20260716-2,4,15,785,662,123,Panes quemados en horno,2026-07-16 15:00:00,3,finalizada,SEED-T2 orden de produccion
+489,OP-20260716-3,6,26,151,131,20,Panes quemados en horno,2026-07-16 05:15:00,3,finalizada,SEED-T2 orden de produccion
+490,OP-20260716-4,5,25,71,61,10,Perdida normal de proceso,2026-07-16 05:45:00,3,finalizada,SEED-T2 orden de produccion
+491,OP-20260716-5,7,27,4,3,1,Perdida normal de proceso,2026-07-16 09:00:00,3,finalizada,SEED-T2 orden de produccion
+492,OP-20260717-1,4,15,900,759,141,Panes quemados en horno,2026-07-17 04:30:00,3,finalizada,SEED-T2 orden de produccion
+493,OP-20260717-2,4,15,723,629,94,Piezas con deformacion en horneado,2026-07-17 15:00:00,3,finalizada,SEED-T2 orden de produccion
+494,OP-20260717-3,6,26,154,135,19,Panes quemados en horno,2026-07-17 05:15:00,3,finalizada,SEED-T2 orden de produccion
+495,OP-20260717-4,5,25,55,49,6,Panes quemados en horno,2026-07-17 05:45:00,3,finalizada,SEED-T2 orden de produccion
+496,OP-20260718-1,4,15,1041,877,164,Perdida normal de proceso,2026-07-18 04:30:00,3,finalizada,SEED-T2 orden de produccion
+497,OP-20260718-2,4,15,995,881,114,Panes quemados en horno,2026-07-18 15:00:00,3,finalizada,SEED-T2 orden de produccion
+498,OP-20260718-3,6,26,156,137,19,Panes quemados en horno,2026-07-18 05:15:00,3,finalizada,SEED-T2 orden de produccion
+499,OP-20260718-4,5,25,86,76,10,Panes quemados en horno,2026-07-18 05:45:00,3,finalizada,SEED-T2 orden de produccion
+500,OP-20260718-5,7,27,2,1,1,Panes quemados en horno,2026-07-18 09:00:00,3,finalizada,SEED-T2 orden de produccion
+501,OP-20260719-1,4,15,1066,951,115,Piezas con deformacion en horneado,2026-07-19 04:30:00,3,finalizada,SEED-T2 orden de produccion
+502,OP-20260719-2,4,15,965,858,107,Panes quemados en horno,2026-07-19 15:00:00,3,finalizada,SEED-T2 orden de produccion
+503,OP-20260719-3,6,26,191,164,27,Piezas con deformacion en horneado,2026-07-19 05:15:00,3,finalizada,SEED-T2 orden de produccion
+504,OP-20260719-4,5,25,84,72,12,Piezas con deformacion en horneado,2026-07-19 05:45:00,3,finalizada,SEED-T2 orden de produccion
+505,OP-20260720-1,4,15,814,725,89,Piezas con deformacion en horneado,2026-07-20 04:30:00,3,finalizada,SEED-T2 orden de produccion
+506,OP-20260720-2,4,15,687,578,109,Panes quemados en horno,2026-07-20 15:00:00,3,finalizada,SEED-T2 orden de produccion
+507,OP-20260720-3,6,26,103,91,12,Piezas con deformacion en horneado,2026-07-20 05:15:00,3,finalizada,SEED-T2 orden de produccion
+508,OP-20260720-4,5,25,75,66,9,Piezas con deformacion en horneado,2026-07-20 05:45:00,3,finalizada,SEED-T2 orden de produccion
+509,OP-20260720-5,7,27,1,0,1,Panes quemados en horno,2026-07-20 09:00:00,3,finalizada,SEED-T2 orden de produccion
+510,OP-20260721-1,4,15,909,823,86,Panes quemados en horno,2026-07-21 04:30:00,3,finalizada,SEED-T2 orden de produccion
+511,OP-20260721-2,4,15,784,668,116,Caida durante manipulacion,2026-07-21 15:00:00,3,finalizada,SEED-T2 orden de produccion
+512,OP-20260721-3,6,26,119,104,15,Panes quemados en horno,2026-07-21 05:15:00,3,finalizada,SEED-T2 orden de produccion
+513,OP-20260721-4,5,25,55,47,8,Panes quemados en horno,2026-07-21 05:45:00,3,finalizada,SEED-T2 orden de produccion
+514,OP-20260721-5,7,27,3,2,1,Perdida normal de proceso,2026-07-21 09:00:00,3,finalizada,SEED-T2 orden de produccion
+515,OP-20260722-1,4,15,838,739,99,Piezas con deformacion en horneado,2026-07-22 04:30:00,3,finalizada,SEED-T2 orden de produccion
+516,OP-20260722-2,4,15,694,606,88,Panes quemados en horno,2026-07-22 15:00:00,3,finalizada,SEED-T2 orden de produccion
+517,OP-20260722-3,6,26,150,130,20,Perdida normal de proceso,2026-07-22 05:15:00,3,finalizada,SEED-T2 orden de produccion
+518,OP-20260722-4,5,25,60,54,6,Perdida normal de proceso,2026-07-22 05:45:00,3,finalizada,SEED-T2 orden de produccion
+519,OP-20260722-5,7,27,2,1,1,Panes quemados en horno,2026-07-22 09:00:00,3,finalizada,SEED-T2 orden de produccion
+520,OP-20260723-1,4,15,908,824,84,Panes quemados en horno,2026-07-23 04:30:00,3,finalizada,SEED-T2 orden de produccion
+521,OP-20260723-2,4,15,694,591,103,Caida durante manipulacion,2026-07-23 15:00:00,3,finalizada,SEED-T2 orden de produccion
+522,OP-20260723-3,6,26,137,122,15,Piezas con deformacion en horneado,2026-07-23 05:15:00,3,finalizada,SEED-T2 orden de produccion
+523,OP-20260723-4,5,25,71,62,9,Panes quemados en horno,2026-07-23 05:45:00,3,finalizada,SEED-T2 orden de produccion
+524,OP-20260723-5,7,27,2,1,1,Piezas con deformacion en horneado,2026-07-23 09:00:00,3,finalizada,SEED-T2 orden de produccion
+525,OP-20260724-1,4,15,847,730,117,Piezas con deformacion en horneado,2026-07-24 04:30:00,3,finalizada,SEED-T2 orden de produccion
+526,OP-20260724-2,4,15,753,677,76,Panes quemados en horno,2026-07-24 15:00:00,3,finalizada,SEED-T2 orden de produccion
+527,OP-20260724-3,6,26,144,124,20,Panes quemados en horno,2026-07-24 05:15:00,3,finalizada,SEED-T2 orden de produccion
+528,OP-20260724-4,5,25,73,63,10,Piezas con deformacion en horneado,2026-07-24 05:45:00,3,finalizada,SEED-T2 orden de produccion
+529,OP-20260725-1,4,15,1146,993,153,Panes quemados en horno,2026-07-25 04:30:00,3,finalizada,SEED-T2 orden de produccion
+530,OP-20260725-2,4,15,881,742,139,Panes quemados en horno,2026-07-25 15:00:00,3,finalizada,SEED-T2 orden de produccion
+531,OP-20260725-3,6,26,145,131,14,Panes quemados en horno,2026-07-25 05:15:00,3,finalizada,SEED-T2 orden de produccion
+532,OP-20260725-4,5,25,92,80,12,Perdida normal de proceso,2026-07-25 05:45:00,3,finalizada,SEED-T2 orden de produccion
+533,OP-20260726-1,4,15,1079,957,122,Piezas con deformacion en horneado,2026-07-26 04:30:00,3,finalizada,SEED-T2 orden de produccion
+534,OP-20260726-2,4,15,882,762,120,Piezas con deformacion en horneado,2026-07-26 15:00:00,3,finalizada,SEED-T2 orden de produccion
+535,OP-20260726-3,6,26,155,139,16,Perdida normal de proceso,2026-07-26 05:15:00,3,finalizada,SEED-T2 orden de produccion
+536,OP-20260726-4,5,25,104,94,10,Piezas con deformacion en horneado,2026-07-26 05:45:00,3,finalizada,SEED-T2 orden de produccion
+537,OP-20260726-5,7,27,1,0,1,Perdida normal de proceso,2026-07-26 09:00:00,3,finalizada,SEED-T2 orden de produccion
+538,OP-20260727-1,4,15,817,713,104,Piezas con deformacion en horneado,2026-07-27 04:30:00,3,finalizada,SEED-T2 orden de produccion
+539,OP-20260727-2,4,15,654,560,94,Piezas con deformacion en horneado,2026-07-27 15:00:00,3,finalizada,SEED-T2 orden de produccion
+540,OP-20260727-3,6,26,133,121,12,Caida durante manipulacion,2026-07-27 05:15:00,3,finalizada,SEED-T2 orden de produccion
+541,OP-20260727-4,5,25,57,49,8,Piezas con deformacion en horneado,2026-07-27 05:45:00,3,finalizada,SEED-T2 orden de produccion
+542,OP-20260728-1,4,15,918,831,87,Panes quemados en horno,2026-07-28 04:30:00,3,finalizada,SEED-T2 orden de produccion
+543,OP-20260728-2,4,15,806,724,82,Caida durante manipulacion,2026-07-28 15:00:00,3,finalizada,SEED-T2 orden de produccion
+544,OP-20260728-3,6,26,153,129,24,Panes quemados en horno,2026-07-28 05:15:00,3,finalizada,SEED-T2 orden de produccion
+545,OP-20260728-4,5,25,62,56,6,Panes quemados en horno,2026-07-28 05:45:00,3,finalizada,SEED-T2 orden de produccion
+546,OP-20260729-1,4,15,891,752,139,Panes quemados en horno,2026-07-29 04:30:00,3,finalizada,SEED-T2 orden de produccion
+547,OP-20260729-2,4,15,795,723,72,Panes quemados en horno,2026-07-29 15:00:00,3,finalizada,SEED-T2 orden de produccion
+548,OP-20260729-3,6,26,112,102,10,Caida durante manipulacion,2026-07-29 05:15:00,3,finalizada,SEED-T2 orden de produccion
+549,OP-20260729-4,5,25,83,74,9,Perdida normal de proceso,2026-07-29 05:45:00,3,finalizada,SEED-T2 orden de produccion
+550,OP-20260730-1,4,15,822,740,82,Perdida normal de proceso,2026-07-30 04:30:00,3,finalizada,SEED-T2 orden de produccion
+551,OP-20260730-2,4,15,773,690,83,Panes quemados en horno,2026-07-30 15:00:00,3,finalizada,SEED-T2 orden de produccion
+552,OP-20260730-3,6,26,138,117,21,Piezas con deformacion en horneado,2026-07-30 05:15:00,3,finalizada,SEED-T2 orden de produccion
+553,OP-20260730-4,5,25,84,72,12,Piezas con deformacion en horneado,2026-07-30 05:45:00,3,finalizada,SEED-T2 orden de produccion
+554,OP-20260730-5,7,27,3,2,1,Perdida normal de proceso,2026-07-30 09:00:00,3,finalizada,SEED-T2 orden de produccion
+555,OP-20260731-1,4,15,873,772,101,Piezas con deformacion en horneado,2026-07-31 04:30:00,3,finalizada,SEED-T2 orden de produccion
+556,OP-20260731-2,4,15,693,589,104,Panes quemados en horno,2026-07-31 15:00:00,3,finalizada,SEED-T2 orden de produccion
+557,OP-20260731-3,6,26,128,116,12,Panes quemados en horno,2026-07-31 05:15:00,3,finalizada,SEED-T2 orden de produccion
+558,OP-20260731-4,5,25,83,75,8,Panes quemados en horno,2026-07-31 05:45:00,3,finalizada,SEED-T2 orden de produccion
+559,OP-20260731-5,7,27,4,3,1,Panes quemados en horno,2026-07-31 09:00:00,3,finalizada,SEED-T2 orden de produccion
+560,OP-20260801-1,4,15,1199,1071,128,Panes quemados en horno,2026-08-01 04:30:00,3,finalizada,SEED-T2 orden de produccion
+561,OP-20260801-2,4,15,926,800,126,Piezas con deformacion en horneado,2026-08-01 15:00:00,3,finalizada,SEED-T2 orden de produccion
+562,OP-20260801-3,6,26,138,125,13,Panes quemados en horno,2026-08-01 05:15:00,3,finalizada,SEED-T2 orden de produccion
+563,OP-20260801-4,5,25,84,76,8,Panes quemados en horno,2026-08-01 05:45:00,3,finalizada,SEED-T2 orden de produccion
+564,OP-20260802-1,4,15,1136,992,144,Perdida normal de proceso,2026-08-02 04:30:00,3,finalizada,SEED-T2 orden de produccion
+565,OP-20260802-2,4,15,966,850,116,Piezas con deformacion en horneado,2026-08-02 15:00:00,3,finalizada,SEED-T2 orden de produccion
+566,OP-20260802-3,6,26,184,160,24,Panes quemados en horno,2026-08-02 05:15:00,3,finalizada,SEED-T2 orden de produccion
+567,OP-20260802-4,5,25,69,63,6,Panes quemados en horno,2026-08-02 05:45:00,3,finalizada,SEED-T2 orden de produccion
+568,OP-20260802-5,7,27,3,2,1,Panes quemados en horno,2026-08-02 09:00:00,3,finalizada,SEED-T2 orden de produccion
+569,OP-20260803-1,4,15,844,725,119,Panes quemados en horno,2026-08-03 04:30:00,3,finalizada,SEED-T2 orden de produccion
+570,OP-20260803-2,4,15,651,576,75,Perdida normal de proceso,2026-08-03 15:00:00,3,finalizada,SEED-T2 orden de produccion
+571,OP-20260803-3,6,26,109,98,11,Piezas con deformacion en horneado,2026-08-03 05:15:00,3,finalizada,SEED-T2 orden de produccion
+572,OP-20260803-4,5,25,70,62,8,Piezas con deformacion en horneado,2026-08-03 05:45:00,3,finalizada,SEED-T2 orden de produccion
+573,OP-20260804-1,4,15,863,726,137,Perdida normal de proceso,2026-08-04 04:30:00,3,finalizada,SEED-T2 orden de produccion
+574,OP-20260804-2,4,15,800,723,77,Perdida normal de proceso,2026-08-04 15:00:00,3,finalizada,SEED-T2 orden de produccion
+575,OP-20260804-3,6,26,154,133,21,Panes quemados en horno,2026-08-04 05:15:00,3,finalizada,SEED-T2 orden de produccion
+576,OP-20260804-4,5,25,56,47,9,Piezas con deformacion en horneado,2026-08-04 05:45:00,3,finalizada,SEED-T2 orden de produccion
+577,OP-20260804-5,7,27,4,3,1,Perdida normal de proceso,2026-08-04 09:00:00,3,finalizada,SEED-T2 orden de produccion
+578,OP-20260805-1,4,15,828,697,131,Piezas con deformacion en horneado,2026-08-05 04:30:00,3,finalizada,SEED-T2 orden de produccion
+579,OP-20260805-2,4,15,710,605,105,Panes quemados en horno,2026-08-05 15:00:00,3,finalizada,SEED-T2 orden de produccion
+580,OP-20260805-3,6,26,137,117,20,Panes quemados en horno,2026-08-05 05:15:00,3,finalizada,SEED-T2 orden de produccion
+581,OP-20260805-4,5,25,61,51,10,Panes quemados en horno,2026-08-05 05:45:00,3,finalizada,SEED-T2 orden de produccion
+582,OP-20260806-1,4,15,901,795,106,Panes quemados en horno,2026-08-06 04:30:00,3,finalizada,SEED-T2 orden de produccion
+583,OP-20260806-2,4,15,778,695,83,Perdida normal de proceso,2026-08-06 15:00:00,3,finalizada,SEED-T2 orden de produccion
+584,OP-20260806-3,6,26,126,109,17,Panes quemados en horno,2026-08-06 05:15:00,3,finalizada,SEED-T2 orden de produccion
+585,OP-20260806-4,5,25,58,49,9,Panes quemados en horno,2026-08-06 05:45:00,3,finalizada,SEED-T2 orden de produccion
+586,OP-20260807-1,4,15,836,752,84,Panes quemados en horno,2026-08-07 04:30:00,3,finalizada,SEED-T2 orden de produccion
+587,OP-20260807-2,4,15,752,653,99,Panes quemados en horno,2026-08-07 15:00:00,3,finalizada,SEED-T2 orden de produccion
+588,OP-20260807-3,6,26,141,122,19,Piezas con deformacion en horneado,2026-08-07 05:15:00,3,finalizada,SEED-T2 orden de produccion
+589,OP-20260807-4,5,25,65,55,10,Perdida normal de proceso,2026-08-07 05:45:00,3,finalizada,SEED-T2 orden de produccion
+590,OP-20260807-5,7,27,2,1,1,Perdida normal de proceso,2026-08-07 09:00:00,3,finalizada,SEED-T2 orden de produccion
+591,OP-20260808-1,4,15,1058,907,151,Panes quemados en horno,2026-08-08 04:30:00,3,finalizada,SEED-T2 orden de produccion
+592,OP-20260808-2,4,15,952,823,129,Panes quemados en horno,2026-08-08 15:00:00,3,finalizada,SEED-T2 orden de produccion
+593,OP-20260808-3,6,26,175,154,21,Panes quemados en horno,2026-08-08 05:15:00,3,finalizada,SEED-T2 orden de produccion
+594,OP-20260808-4,5,25,76,65,11,Panes quemados en horno,2026-08-08 05:45:00,3,finalizada,SEED-T2 orden de produccion
+595,OP-20260809-1,4,15,1064,929,135,Piezas con deformacion en horneado,2026-08-09 04:30:00,3,finalizada,SEED-T2 orden de produccion
+596,OP-20260809-2,4,15,931,805,126,Caida durante manipulacion,2026-08-09 15:00:00,3,finalizada,SEED-T2 orden de produccion
+597,OP-20260809-3,6,26,172,148,24,Perdida normal de proceso,2026-08-09 05:15:00,3,finalizada,SEED-T2 orden de produccion
+598,OP-20260809-4,5,25,74,65,9,Perdida normal de proceso,2026-08-09 05:45:00,3,finalizada,SEED-T2 orden de produccion
+599,OP-20260810-1,4,15,811,734,77,Perdida normal de proceso,2026-08-10 04:30:00,3,finalizada,SEED-T2 orden de produccion
+600,OP-20260810-2,4,15,664,569,95,Panes quemados en horno,2026-08-10 15:00:00,3,finalizada,SEED-T2 orden de produccion
+601,OP-20260810-3,6,26,129,113,16,Panes quemados en horno,2026-08-10 05:15:00,3,finalizada,SEED-T2 orden de produccion
+602,OP-20260810-4,5,25,61,55,6,Piezas con deformacion en horneado,2026-08-10 05:45:00,3,finalizada,SEED-T2 orden de produccion
+603,OP-20260810-5,7,27,3,2,1,Panes quemados en horno,2026-08-10 09:00:00,3,finalizada,SEED-T2 orden de produccion
+604,OP-20260811-1,4,15,916,771,145,Piezas con deformacion en horneado,2026-08-11 04:30:00,3,finalizada,SEED-T2 orden de produccion
+605,OP-20260811-2,4,15,795,709,86,Piezas con deformacion en horneado,2026-08-11 15:00:00,3,finalizada,SEED-T2 orden de produccion
+606,OP-20260811-3,6,26,145,130,15,Piezas con deformacion en horneado,2026-08-11 05:15:00,3,finalizada,SEED-T2 orden de produccion
+607,OP-20260811-4,5,25,61,55,6,Panes quemados en horno,2026-08-11 05:45:00,3,finalizada,SEED-T2 orden de produccion
+608,OP-20260812-1,4,15,853,733,120,Piezas con deformacion en horneado,2026-08-12 04:30:00,3,finalizada,SEED-T2 orden de produccion
+609,OP-20260812-2,4,15,688,580,108,Caida durante manipulacion,2026-08-12 15:00:00,3,finalizada,SEED-T2 orden de produccion
+610,OP-20260812-3,6,26,144,130,14,Panes quemados en horno,2026-08-12 05:15:00,3,finalizada,SEED-T2 orden de produccion
+611,OP-20260812-4,5,25,72,62,10,Piezas con deformacion en horneado,2026-08-12 05:45:00,3,finalizada,SEED-T2 orden de produccion
+612,OP-20260813-1,4,15,844,750,94,Caida durante manipulacion,2026-08-13 04:30:00,3,finalizada,SEED-T2 orden de produccion
+613,OP-20260813-2,4,15,745,632,113,Perdida normal de proceso,2026-08-13 15:00:00,3,finalizada,SEED-T2 orden de produccion
+614,OP-20260813-3,6,26,130,117,13,Panes quemados en horno,2026-08-13 05:15:00,3,finalizada,SEED-T2 orden de produccion
+615,OP-20260813-4,5,25,73,63,10,Panes quemados en horno,2026-08-13 05:45:00,3,finalizada,SEED-T2 orden de produccion
+616,OP-20260814-1,4,15,932,813,119,Panes quemados en horno,2026-08-14 04:30:00,3,finalizada,SEED-T2 orden de produccion
+617,OP-20260814-2,4,15,778,654,124,Piezas con deformacion en horneado,2026-08-14 15:00:00,3,finalizada,SEED-T2 orden de produccion
+618,OP-20260814-3,6,26,120,106,14,Piezas con deformacion en horneado,2026-08-14 05:15:00,3,finalizada,SEED-T2 orden de produccion
+619,OP-20260814-4,5,25,73,64,9,Panes quemados en horno,2026-08-14 05:45:00,3,finalizada,SEED-T2 orden de produccion
+620,OP-20260815-1,4,15,1066,919,147,Piezas con deformacion en horneado,2026-08-15 04:30:00,3,finalizada,SEED-T2 orden de produccion
+621,OP-20260815-2,4,15,895,755,140,Caida durante manipulacion,2026-08-15 15:00:00,3,finalizada,SEED-T2 orden de produccion
+622,OP-20260815-3,6,26,152,130,22,Perdida normal de proceso,2026-08-15 05:15:00,3,finalizada,SEED-T2 orden de produccion
+623,OP-20260815-4,5,25,102,89,13,Perdida normal de proceso,2026-08-15 05:45:00,3,finalizada,SEED-T2 orden de produccion
+624,OP-20260816-1,4,15,1035,926,109,Perdida normal de proceso,2026-08-16 04:30:00,3,finalizada,SEED-T2 orden de produccion
+625,OP-20260816-2,4,15,1004,845,159,Panes quemados en horno,2026-08-16 15:00:00,3,finalizada,SEED-T2 orden de produccion
+626,OP-20260816-3,6,26,149,125,24,Panes quemados en horno,2026-08-16 05:15:00,3,finalizada,SEED-T2 orden de produccion
+627,OP-20260816-4,5,25,76,67,9,Piezas con deformacion en horneado,2026-08-16 05:45:00,3,finalizada,SEED-T2 orden de produccion
+628,OP-20260817-1,4,15,852,728,124,Panes quemados en horno,2026-08-17 04:30:00,3,finalizada,SEED-T2 orden de produccion
+629,OP-20260817-2,4,15,710,622,88,Piezas con deformacion en horneado,2026-08-17 15:00:00,3,finalizada,SEED-T2 orden de produccion
+630,OP-20260817-3,6,26,118,105,13,Caida durante manipulacion,2026-08-17 05:15:00,3,finalizada,SEED-T2 orden de produccion
+631,OP-20260817-4,5,25,76,64,12,Piezas con deformacion en horneado,2026-08-17 05:45:00,3,finalizada,SEED-T2 orden de produccion
+632,OP-20260817-5,7,27,4,3,1,Perdida normal de proceso,2026-08-17 09:00:00,3,finalizada,SEED-T2 orden de produccion
+633,OP-20260818-1,4,15,925,829,96,Piezas con deformacion en horneado,2026-08-18 04:30:00,3,finalizada,SEED-T2 orden de produccion
+634,OP-20260818-2,4,15,780,697,83,Piezas con deformacion en horneado,2026-08-18 15:00:00,3,finalizada,SEED-T2 orden de produccion
+635,OP-20260818-3,6,26,128,108,20,Panes quemados en horno,2026-08-18 05:15:00,3,finalizada,SEED-T2 orden de produccion
+636,OP-20260818-4,5,25,65,57,8,Panes quemados en horno,2026-08-18 05:45:00,3,finalizada,SEED-T2 orden de produccion
+637,OP-20260819-1,4,15,895,761,134,Perdida normal de proceso,2026-08-19 04:30:00,3,finalizada,SEED-T2 orden de produccion
+638,OP-20260819-2,4,15,731,655,76,Piezas con deformacion en horneado,2026-08-19 15:00:00,3,finalizada,SEED-T2 orden de produccion
+639,OP-20260819-3,6,26,119,105,14,Piezas con deformacion en horneado,2026-08-19 05:15:00,3,finalizada,SEED-T2 orden de produccion
+640,OP-20260819-4,5,25,80,69,11,Piezas con deformacion en horneado,2026-08-19 05:45:00,3,finalizada,SEED-T2 orden de produccion
+641,OP-20260819-5,7,27,2,1,1,Perdida normal de proceso,2026-08-19 09:00:00,3,finalizada,SEED-T2 orden de produccion
+642,OP-20260820-1,4,15,851,743,108,Piezas con deformacion en horneado,2026-08-20 04:30:00,3,finalizada,SEED-T2 orden de produccion
+643,OP-20260820-2,4,15,702,627,75,Piezas con deformacion en horneado,2026-08-20 15:00:00,3,finalizada,SEED-T2 orden de produccion
+644,OP-20260820-3,6,26,140,119,21,Panes quemados en horno,2026-08-20 05:15:00,3,finalizada,SEED-T2 orden de produccion
+645,OP-20260820-4,5,25,81,73,8,Panes quemados en horno,2026-08-20 05:45:00,3,finalizada,SEED-T2 orden de produccion
+646,OP-20260821-1,4,15,854,732,122,Panes quemados en horno,2026-08-21 04:30:00,3,finalizada,SEED-T2 orden de produccion
+647,OP-20260821-2,4,15,787,712,75,Piezas con deformacion en horneado,2026-08-21 15:00:00,3,finalizada,SEED-T2 orden de produccion
+648,OP-20260821-3,6,26,134,119,15,Perdida normal de proceso,2026-08-21 05:15:00,3,finalizada,SEED-T2 orden de produccion
+649,OP-20260821-4,5,25,77,68,9,Piezas con deformacion en horneado,2026-08-21 05:45:00,3,finalizada,SEED-T2 orden de produccion
+650,OP-20260821-5,7,27,1,0,1,Panes quemados en horno,2026-08-21 09:00:00,3,finalizada,SEED-T2 orden de produccion
+651,OP-20260822-1,4,15,1135,971,164,Perdida normal de proceso,2026-08-22 04:30:00,3,finalizada,SEED-T2 orden de produccion
+652,OP-20260822-2,4,15,885,780,105,Panes quemados en horno,2026-08-22 15:00:00,3,finalizada,SEED-T2 orden de produccion
+653,OP-20260822-3,6,26,178,156,22,Panes quemados en horno,2026-08-22 05:15:00,3,finalizada,SEED-T2 orden de produccion
+654,OP-20260822-4,5,25,104,91,13,Piezas con deformacion en horneado,2026-08-22 05:45:00,3,finalizada,SEED-T2 orden de produccion
+655,OP-20260823-1,4,15,1059,915,144,Caida durante manipulacion,2026-08-23 04:30:00,3,finalizada,SEED-T2 orden de produccion
+656,OP-20260823-2,4,15,962,825,137,Caida durante manipulacion,2026-08-23 15:00:00,3,finalizada,SEED-T2 orden de produccion
+657,OP-20260823-3,6,26,138,125,13,Panes quemados en horno,2026-08-23 05:15:00,3,finalizada,SEED-T2 orden de produccion
+658,OP-20260823-4,5,25,92,78,14,Panes quemados en horno,2026-08-23 05:45:00,3,finalizada,SEED-T2 orden de produccion
+659,OP-20260824-1,4,15,781,661,120,Perdida normal de proceso,2026-08-24 04:30:00,3,finalizada,SEED-T2 orden de produccion
+660,OP-20260824-2,4,15,654,571,83,Piezas con deformacion en horneado,2026-08-24 15:00:00,3,finalizada,SEED-T2 orden de produccion
+661,OP-20260824-3,6,26,125,110,15,Panes quemados en horno,2026-08-24 05:15:00,3,finalizada,SEED-T2 orden de produccion
+662,OP-20260824-4,5,25,52,46,6,Perdida normal de proceso,2026-08-24 05:45:00,3,finalizada,SEED-T2 orden de produccion
+663,OP-20260824-5,7,27,3,2,1,Perdida normal de proceso,2026-08-24 09:00:00,3,finalizada,SEED-T2 orden de produccion
+664,OP-20260825-1,4,15,933,798,135,Piezas con deformacion en horneado,2026-08-25 04:30:00,3,finalizada,SEED-T2 orden de produccion
+665,OP-20260825-2,4,15,805,701,104,Perdida normal de proceso,2026-08-25 15:00:00,3,finalizada,SEED-T2 orden de produccion
+666,OP-20260825-3,6,26,122,108,14,Panes quemados en horno,2026-08-25 05:15:00,3,finalizada,SEED-T2 orden de produccion
+667,OP-20260825-4,5,25,64,57,7,Panes quemados en horno,2026-08-25 05:45:00,3,finalizada,SEED-T2 orden de produccion
+668,OP-20260826-1,4,15,862,744,118,Panes quemados en horno,2026-08-26 04:30:00,3,finalizada,SEED-T2 orden de produccion
+669,OP-20260826-2,4,15,695,617,78,Panes quemados en horno,2026-08-26 15:00:00,3,finalizada,SEED-T2 orden de produccion
+670,OP-20260826-3,6,26,121,106,15,Perdida normal de proceso,2026-08-26 05:15:00,3,finalizada,SEED-T2 orden de produccion
+671,OP-20260826-4,5,25,81,73,8,Panes quemados en horno,2026-08-26 05:45:00,3,finalizada,SEED-T2 orden de produccion
+672,OP-20260827-1,4,15,899,806,93,Panes quemados en horno,2026-08-27 04:30:00,3,finalizada,SEED-T2 orden de produccion
+673,OP-20260827-2,4,15,762,669,93,Panes quemados en horno,2026-08-27 15:00:00,3,finalizada,SEED-T2 orden de produccion
+674,OP-20260827-3,6,26,133,117,16,Piezas con deformacion en horneado,2026-08-27 05:15:00,3,finalizada,SEED-T2 orden de produccion
+675,OP-20260827-4,5,25,83,73,10,Perdida normal de proceso,2026-08-27 05:45:00,3,finalizada,SEED-T2 orden de produccion
+676,OP-20260828-1,4,15,868,741,127,Piezas con deformacion en horneado,2026-08-28 04:30:00,3,finalizada,SEED-T2 orden de produccion
+677,OP-20260828-2,4,15,761,662,99,Piezas con deformacion en horneado,2026-08-28 15:00:00,3,finalizada,SEED-T2 orden de produccion
+678,OP-20260828-3,6,26,153,136,17,Perdida normal de proceso,2026-08-28 05:15:00,3,finalizada,SEED-T2 orden de produccion
+679,OP-20260828-4,5,25,66,57,9,Perdida normal de proceso,2026-08-28 05:45:00,3,finalizada,SEED-T2 orden de produccion
+680,OP-20260828-5,7,27,2,1,1,Piezas con deformacion en horneado,2026-08-28 09:00:00,3,finalizada,SEED-T2 orden de produccion
+681,OP-20260829-1,4,15,1066,955,111,Panes quemados en horno,2026-08-29 04:30:00,3,finalizada,SEED-T2 orden de produccion
+682,OP-20260829-2,4,15,1002,857,145,Panes quemados en horno,2026-08-29 15:00:00,3,finalizada,SEED-T2 orden de produccion
+683,OP-20260829-3,6,26,138,118,20,Panes quemados en horno,2026-08-29 05:15:00,3,finalizada,SEED-T2 orden de produccion
+684,OP-20260829-4,5,25,71,64,7,Panes quemados en horno,2026-08-29 05:45:00,3,finalizada,SEED-T2 orden de produccion
+685,OP-20260830-1,4,15,1160,1035,125,Perdida normal de proceso,2026-08-30 04:30:00,3,finalizada,SEED-T2 orden de produccion
+686,OP-20260830-2,4,15,1005,873,132,Panes quemados en horno,2026-08-30 15:00:00,3,finalizada,SEED-T2 orden de produccion
+687,OP-20260830-3,6,26,168,146,22,Panes quemados en horno,2026-08-30 05:15:00,3,finalizada,SEED-T2 orden de produccion
+688,OP-20260830-4,5,25,105,92,13,Piezas con deformacion en horneado,2026-08-30 05:45:00,3,finalizada,SEED-T2 orden de produccion
+689,OP-20260830-5,7,27,3,2,1,Caida durante manipulacion,2026-08-30 09:00:00,3,finalizada,SEED-T2 orden de produccion
+690,OP-20260831-1,4,15,796,701,95,Piezas con deformacion en horneado,2026-08-31 04:30:00,3,finalizada,SEED-T2 orden de produccion
+691,OP-20260831-2,4,15,681,576,105,Piezas con deformacion en horneado,2026-08-31 15:00:00,3,finalizada,SEED-T2 orden de produccion
+692,OP-20260831-3,6,26,102,89,13,Panes quemados en horno,2026-08-31 05:15:00,3,finalizada,SEED-T2 orden de produccion
+693,OP-20260831-4,5,25,56,51,5,Perdida normal de proceso,2026-08-31 05:45:00,3,finalizada,SEED-T2 orden de produccion
+694,OP-20260901-1,4,15,888,753,135,Piezas con deformacion en horneado,2026-09-01 04:30:00,3,finalizada,SEED-T2 orden de produccion
+695,OP-20260901-2,4,15,720,631,89,Perdida normal de proceso,2026-09-01 15:00:00,3,finalizada,SEED-T2 orden de produccion
+696,OP-20260901-3,6,26,133,113,20,Piezas con deformacion en horneado,2026-09-01 05:15:00,3,finalizada,SEED-T2 orden de produccion
+697,OP-20260901-4,5,25,74,66,8,Panes quemados en horno,2026-09-01 05:45:00,3,finalizada,SEED-T2 orden de produccion
+698,OP-20260901-5,7,27,4,3,1,Panes quemados en horno,2026-09-01 09:00:00,3,finalizada,SEED-T2 orden de produccion
+699,OP-20260902-1,4,15,879,752,127,Perdida normal de proceso,2026-09-02 04:30:00,3,finalizada,SEED-T2 orden de produccion
+700,OP-20260902-2,4,15,722,628,94,Caida durante manipulacion,2026-09-02 15:00:00,3,finalizada,SEED-T2 orden de produccion
+701,OP-20260902-3,6,26,117,104,13,Piezas con deformacion en horneado,2026-09-02 05:15:00,3,finalizada,SEED-T2 orden de produccion
+702,OP-20260902-4,5,25,66,58,8,Panes quemados en horno,2026-09-02 05:45:00,3,finalizada,SEED-T2 orden de produccion
+703,OP-20260903-1,4,15,959,841,118,Panes quemados en horno,2026-09-03 04:30:00,3,finalizada,SEED-T2 orden de produccion
+704,OP-20260903-2,4,15,722,627,95,Piezas con deformacion en horneado,2026-09-03 15:00:00,3,finalizada,SEED-T2 orden de produccion
+705,OP-20260903-3,6,26,123,109,14,Panes quemados en horno,2026-09-03 05:15:00,3,finalizada,SEED-T2 orden de produccion
+706,OP-20260903-4,5,25,59,51,8,Panes quemados en horno,2026-09-03 05:45:00,3,finalizada,SEED-T2 orden de produccion
+707,OP-20260903-5,7,27,4,3,1,Panes quemados en horno,2026-09-03 09:00:00,3,finalizada,SEED-T2 orden de produccion
+708,OP-20260904-1,4,15,883,794,89,Panes quemados en horno,2026-09-04 04:30:00,3,finalizada,SEED-T2 orden de produccion
+709,OP-20260904-2,4,15,741,663,78,Perdida normal de proceso,2026-09-04 15:00:00,3,finalizada,SEED-T2 orden de produccion
+710,OP-20260904-3,6,26,121,109,12,Panes quemados en horno,2026-09-04 05:15:00,3,finalizada,SEED-T2 orden de produccion
+711,OP-20260904-4,5,25,56,48,8,Panes quemados en horno,2026-09-04 05:45:00,3,finalizada,SEED-T2 orden de produccion
+712,OP-20260905-1,4,15,1026,907,119,Perdida normal de proceso,2026-09-05 04:30:00,3,finalizada,SEED-T2 orden de produccion
+713,OP-20260905-2,4,15,949,851,98,Panes quemados en horno,2026-09-05 15:00:00,3,finalizada,SEED-T2 orden de produccion
+714,OP-20260905-3,6,26,141,119,22,Piezas con deformacion en horneado,2026-09-05 05:15:00,3,finalizada,SEED-T2 orden de produccion
+715,OP-20260905-4,5,25,82,70,12,Piezas con deformacion en horneado,2026-09-05 05:45:00,3,finalizada,SEED-T2 orden de produccion
+716,OP-20260906-1,4,15,1026,880,146,Piezas con deformacion en horneado,2026-09-06 04:30:00,3,finalizada,SEED-T2 orden de produccion
+717,OP-20260906-2,4,15,932,812,120,Panes quemados en horno,2026-09-06 15:00:00,3,finalizada,SEED-T2 orden de produccion
+718,OP-20260906-3,6,26,161,141,20,Panes quemados en horno,2026-09-06 05:15:00,3,finalizada,SEED-T2 orden de produccion
+719,OP-20260906-4,5,25,105,89,16,Perdida normal de proceso,2026-09-06 05:45:00,3,finalizada,SEED-T2 orden de produccion
+720,OP-20260907-1,4,15,850,739,111,Panes quemados en horno,2026-09-07 04:30:00,3,finalizada,SEED-T2 orden de produccion
+721,OP-20260907-2,4,15,632,561,71,Panes quemados en horno,2026-09-07 15:00:00,3,finalizada,SEED-T2 orden de produccion
+722,OP-20260907-3,6,26,124,106,18,Piezas con deformacion en horneado,2026-09-07 05:15:00,3,finalizada,SEED-T2 orden de produccion
+723,OP-20260907-4,5,25,70,59,11,Panes quemados en horno,2026-09-07 05:45:00,3,finalizada,SEED-T2 orden de produccion
+724,OP-20260908-1,4,15,860,728,132,Perdida normal de proceso,2026-09-08 04:30:00,3,finalizada,SEED-T2 orden de produccion
+725,OP-20260908-2,4,15,746,645,101,Perdida normal de proceso,2026-09-08 15:00:00,3,finalizada,SEED-T2 orden de produccion
+726,OP-20260908-3,6,26,135,118,17,Panes quemados en horno,2026-09-08 05:15:00,3,finalizada,SEED-T2 orden de produccion
+727,OP-20260908-4,5,25,72,61,11,Panes quemados en horno,2026-09-08 05:45:00,3,finalizada,SEED-T2 orden de produccion
+728,OP-20260908-5,7,27,2,1,1,Perdida normal de proceso,2026-09-08 09:00:00,3,finalizada,SEED-T2 orden de produccion
+729,OP-20260909-1,4,15,952,843,109,Perdida normal de proceso,2026-09-09 04:30:00,3,finalizada,SEED-T2 orden de produccion
+730,OP-20260909-2,4,15,696,615,81,Piezas con deformacion en horneado,2026-09-09 15:00:00,3,finalizada,SEED-T2 orden de produccion
+731,OP-20260909-3,6,26,112,97,15,Panes quemados en horno,2026-09-09 05:15:00,3,finalizada,SEED-T2 orden de produccion
+732,OP-20260909-4,5,25,79,68,11,Piezas con deformacion en horneado,2026-09-09 05:45:00,3,finalizada,SEED-T2 orden de produccion
+733,OP-20260910-1,4,15,886,748,138,Panes quemados en horno,2026-09-10 04:30:00,3,finalizada,SEED-T2 orden de produccion
+734,OP-20260910-2,4,15,769,672,97,Perdida normal de proceso,2026-09-10 15:00:00,3,finalizada,SEED-T2 orden de produccion
+735,OP-20260910-3,6,26,144,123,21,Piezas con deformacion en horneado,2026-09-10 05:15:00,3,finalizada,SEED-T2 orden de produccion
+736,OP-20260910-4,5,25,79,69,10,Perdida normal de proceso,2026-09-10 05:45:00,3,finalizada,SEED-T2 orden de produccion
+737,OP-20260911-1,4,15,873,765,108,Panes quemados en horno,2026-09-11 04:30:00,3,finalizada,SEED-T2 orden de produccion
+738,OP-20260911-2,4,15,770,658,112,Piezas con deformacion en horneado,2026-09-11 15:00:00,3,finalizada,SEED-T2 orden de produccion
+739,OP-20260911-3,6,26,117,104,13,Panes quemados en horno,2026-09-11 05:15:00,3,finalizada,SEED-T2 orden de produccion
+740,OP-20260911-4,5,25,63,56,7,Panes quemados en horno,2026-09-11 05:45:00,3,finalizada,SEED-T2 orden de produccion
+741,OP-20260912-1,4,15,1181,995,186,Panes quemados en horno,2026-09-12 04:30:00,3,finalizada,SEED-T2 orden de produccion
+742,OP-20260912-2,4,15,991,840,151,Piezas con deformacion en horneado,2026-09-12 15:00:00,3,finalizada,SEED-T2 orden de produccion
+743,OP-20260912-3,6,26,181,157,24,Perdida normal de proceso,2026-09-12 05:15:00,3,finalizada,SEED-T2 orden de produccion
+744,OP-20260912-4,5,25,85,74,11,Panes quemados en horno,2026-09-12 05:45:00,3,finalizada,SEED-T2 orden de produccion
+745,OP-20260913-1,4,15,1040,910,130,Panes quemados en horno,2026-09-13 04:30:00,3,finalizada,SEED-T2 orden de produccion
+746,OP-20260913-2,4,15,966,821,145,Panes quemados en horno,2026-09-13 15:00:00,3,finalizada,SEED-T2 orden de produccion
+747,OP-20260913-3,6,26,141,119,22,Piezas con deformacion en horneado,2026-09-13 05:15:00,3,finalizada,SEED-T2 orden de produccion
+748,OP-20260913-4,5,25,72,61,11,Caida durante manipulacion,2026-09-13 05:45:00,3,finalizada,SEED-T2 orden de produccion
+749,OP-20260914-1,4,15,828,722,106,Piezas con deformacion en horneado,2026-09-14 04:30:00,3,finalizada,SEED-T2 orden de produccion
+750,OP-20260914-2,4,15,652,590,62,Panes quemados en horno,2026-09-14 15:00:00,3,finalizada,SEED-T2 orden de produccion
+751,OP-20260914-3,6,26,123,104,19,Piezas con deformacion en horneado,2026-09-14 05:15:00,3,finalizada,SEED-T2 orden de produccion
+752,OP-20260914-4,5,25,76,67,9,Perdida normal de proceso,2026-09-14 05:45:00,3,finalizada,SEED-T2 orden de produccion
+753,OP-20260915-1,4,15,859,746,113,Panes quemados en horno,2026-09-15 04:30:00,3,finalizada,SEED-T2 orden de produccion
+754,OP-20260915-2,4,15,796,720,76,Piezas con deformacion en horneado,2026-09-15 15:00:00,3,finalizada,SEED-T2 orden de produccion
+755,OP-20260915-3,6,26,133,115,18,Piezas con deformacion en horneado,2026-09-15 05:15:00,3,finalizada,SEED-T2 orden de produccion
+756,OP-20260915-4,5,25,56,48,8,Panes quemados en horno,2026-09-15 05:45:00,3,finalizada,SEED-T2 orden de produccion
+757,OP-20260916-1,4,15,840,747,93,Panes quemados en horno,2026-09-16 04:30:00,3,finalizada,SEED-T2 orden de produccion
+758,OP-20260916-2,4,15,748,662,86,Panes quemados en horno,2026-09-16 15:00:00,3,finalizada,SEED-T2 orden de produccion
+759,OP-20260916-3,6,26,153,137,16,Piezas con deformacion en horneado,2026-09-16 05:15:00,3,finalizada,SEED-T2 orden de produccion
+760,OP-20260916-4,5,25,57,51,6,Perdida normal de proceso,2026-09-16 05:45:00,3,finalizada,SEED-T2 orden de produccion
+761,OP-20260916-5,7,27,2,1,1,Piezas con deformacion en horneado,2026-09-16 09:00:00,3,finalizada,SEED-T2 orden de produccion
+762,OP-20260917-1,4,15,957,844,113,Panes quemados en horno,2026-09-17 04:30:00,3,finalizada,SEED-T2 orden de produccion
+763,OP-20260917-2,4,15,681,576,105,Piezas con deformacion en horneado,2026-09-17 15:00:00,3,finalizada,SEED-T2 orden de produccion
+764,OP-20260917-3,6,26,122,105,17,Piezas con deformacion en horneado,2026-09-17 05:15:00,3,finalizada,SEED-T2 orden de produccion
+765,OP-20260917-4,5,25,69,60,9,Piezas con deformacion en horneado,2026-09-17 05:45:00,3,finalizada,SEED-T2 orden de produccion
+766,OP-20260917-5,7,27,2,1,1,Perdida normal de proceso,2026-09-17 09:00:00,3,finalizada,SEED-T2 orden de produccion
+767,OP-20260918-1,4,15,867,729,138,Perdida normal de proceso,2026-09-18 04:30:00,3,finalizada,SEED-T2 orden de produccion
+768,OP-20260918-2,4,15,714,649,65,Panes quemados en horno,2026-09-18 15:00:00,3,finalizada,SEED-T2 orden de produccion
+769,OP-20260918-3,6,26,128,115,13,Piezas con deformacion en horneado,2026-09-18 05:15:00,3,finalizada,SEED-T2 orden de produccion
+770,OP-20260918-4,5,25,76,67,9,Piezas con deformacion en horneado,2026-09-18 05:45:00,3,finalizada,SEED-T2 orden de produccion
+771,OP-20260919-1,4,15,1109,950,159,Panes quemados en horno,2026-09-19 04:30:00,3,finalizada,SEED-T2 orden de produccion
+772,OP-20260919-2,4,15,931,818,113,Piezas con deformacion en horneado,2026-09-19 15:00:00,3,finalizada,SEED-T2 orden de produccion
+773,OP-20260919-3,6,26,146,133,13,Perdida normal de proceso,2026-09-19 05:15:00,3,finalizada,SEED-T2 orden de produccion
+774,OP-20260919-4,5,25,79,70,9,Piezas con deformacion en horneado,2026-09-19 05:45:00,3,finalizada,SEED-T2 orden de produccion
+775,OP-20260919-5,7,27,4,3,1,Panes quemados en horno,2026-09-19 09:00:00,3,finalizada,SEED-T2 orden de produccion
+776,OP-20260920-1,4,15,1025,906,119,Piezas con deformacion en horneado,2026-09-20 04:30:00,3,finalizada,SEED-T2 orden de produccion
+777,OP-20260920-2,4,15,960,853,107,Piezas con deformacion en horneado,2026-09-20 15:00:00,3,finalizada,SEED-T2 orden de produccion
+778,OP-20260920-3,6,26,172,145,27,Perdida normal de proceso,2026-09-20 05:15:00,3,finalizada,SEED-T2 orden de produccion
+779,OP-20260920-4,5,25,98,84,14,Panes quemados en horno,2026-09-20 05:45:00,3,finalizada,SEED-T2 orden de produccion
+780,OP-20260920-5,7,27,4,3,1,Panes quemados en horno,2026-09-20 09:00:00,3,finalizada,SEED-T2 orden de produccion
+781,OP-20260921-1,4,15,855,755,100,Panes quemados en horno,2026-09-21 04:30:00,3,finalizada,SEED-T2 orden de produccion
+782,OP-20260921-2,4,15,669,606,63,Piezas con deformacion en horneado,2026-09-21 15:00:00,3,finalizada,SEED-T2 orden de produccion
+783,OP-20260921-3,6,26,124,112,12,Piezas con deformacion en horneado,2026-09-21 05:15:00,3,finalizada,SEED-T2 orden de produccion
+784,OP-20260921-4,5,25,50,44,6,Panes quemados en horno,2026-09-21 05:45:00,3,finalizada,SEED-T2 orden de produccion
+785,OP-20260922-1,4,15,911,798,113,Perdida normal de proceso,2026-09-22 04:30:00,3,finalizada,SEED-T2 orden de produccion
+786,OP-20260922-2,4,15,743,659,84,Panes quemados en horno,2026-09-22 15:00:00,3,finalizada,SEED-T2 orden de produccion
+787,OP-20260922-3,6,26,117,105,12,Panes quemados en horno,2026-09-22 05:15:00,3,finalizada,SEED-T2 orden de produccion
+788,OP-20260922-4,5,25,75,64,11,Piezas con deformacion en horneado,2026-09-22 05:45:00,3,finalizada,SEED-T2 orden de produccion
+789,OP-20260923-1,4,15,847,738,109,Panes quemados en horno,2026-09-23 04:30:00,3,finalizada,SEED-T2 orden de produccion
+790,OP-20260923-2,4,15,691,628,63,Caida durante manipulacion,2026-09-23 15:00:00,3,finalizada,SEED-T2 orden de produccion
+791,OP-20260923-3,6,26,117,99,18,Panes quemados en horno,2026-09-23 05:15:00,3,finalizada,SEED-T2 orden de produccion
+792,OP-20260923-4,5,25,72,65,7,Panes quemados en horno,2026-09-23 05:45:00,3,finalizada,SEED-T2 orden de produccion
+793,OP-20260923-5,7,27,3,2,1,Perdida normal de proceso,2026-09-23 09:00:00,3,finalizada,SEED-T2 orden de produccion
+794,OP-20260924-1,4,15,953,856,97,Piezas con deformacion en horneado,2026-09-24 04:30:00,3,finalizada,SEED-T2 orden de produccion
+795,OP-20260924-2,4,15,701,612,89,Panes quemados en horno,2026-09-24 15:00:00,3,finalizada,SEED-T2 orden de produccion
+796,OP-20260924-3,6,26,125,112,13,Piezas con deformacion en horneado,2026-09-24 05:15:00,3,finalizada,SEED-T2 orden de produccion
+797,OP-20260924-4,5,25,65,55,10,Panes quemados en horno,2026-09-24 05:45:00,3,finalizada,SEED-T2 orden de produccion
+798,OP-20260924-5,7,27,4,3,1,Perdida normal de proceso,2026-09-24 09:00:00,3,finalizada,SEED-T2 orden de produccion
+799,OP-20260925-1,4,15,917,794,123,Panes quemados en horno,2026-09-25 04:30:00,3,finalizada,SEED-T2 orden de produccion
+800,OP-20260925-2,4,15,717,636,81,Piezas con deformacion en horneado,2026-09-25 15:00:00,3,finalizada,SEED-T2 orden de produccion
+801,OP-20260925-3,6,26,138,125,13,Caida durante manipulacion,2026-09-25 05:15:00,3,finalizada,SEED-T2 orden de produccion
+802,OP-20260925-4,5,25,84,71,13,Piezas con deformacion en horneado,2026-09-25 05:45:00,3,finalizada,SEED-T2 orden de produccion
+803,OP-20260926-1,4,15,1039,899,140,Perdida normal de proceso,2026-09-26 04:30:00,3,finalizada,SEED-T2 orden de produccion
+804,OP-20260926-2,4,15,1008,875,133,Panes quemados en horno,2026-09-26 15:00:00,3,finalizada,SEED-T2 orden de produccion
+805,OP-20260926-3,6,26,164,146,18,Piezas con deformacion en horneado,2026-09-26 05:15:00,3,finalizada,SEED-T2 orden de produccion
+806,OP-20260926-4,5,25,94,81,13,Piezas con deformacion en horneado,2026-09-26 05:45:00,3,finalizada,SEED-T2 orden de produccion
+807,OP-20260926-5,7,27,1,0,1,Perdida normal de proceso,2026-09-26 09:00:00,3,finalizada,SEED-T2 orden de produccion
+808,OP-20260927-1,4,15,1029,902,127,Panes quemados en horno,2026-09-27 04:30:00,3,finalizada,SEED-T2 orden de produccion
+809,OP-20260927-2,4,15,869,750,119,Perdida normal de proceso,2026-09-27 15:00:00,3,finalizada,SEED-T2 orden de produccion
+810,OP-20260927-3,6,26,179,155,24,Piezas con deformacion en horneado,2026-09-27 05:15:00,3,finalizada,SEED-T2 orden de produccion
+811,OP-20260927-4,5,25,85,73,12,Panes quemados en horno,2026-09-27 05:45:00,3,finalizada,SEED-T2 orden de produccion
+812,OP-20260927-5,7,27,3,2,1,Panes quemados en horno,2026-09-27 09:00:00,3,finalizada,SEED-T2 orden de produccion
+813,OP-20260928-1,4,15,794,715,79,Panes quemados en horno,2026-09-28 04:30:00,3,finalizada,SEED-T2 orden de produccion
+814,OP-20260928-2,4,15,662,602,60,Perdida normal de proceso,2026-09-28 15:00:00,3,finalizada,SEED-T2 orden de produccion
+815,OP-20260928-3,6,26,127,108,19,Panes quemados en horno,2026-09-28 05:15:00,3,finalizada,SEED-T2 orden de produccion
+816,OP-20260928-4,5,25,75,64,11,Panes quemados en horno,2026-09-28 05:45:00,3,finalizada,SEED-T2 orden de produccion
+817,OP-20260928-5,7,27,4,3,1,Panes quemados en horno,2026-09-28 09:00:00,3,finalizada,SEED-T2 orden de produccion
+818,OP-20260929-1,4,15,878,759,119,Perdida normal de proceso,2026-09-29 04:30:00,3,finalizada,SEED-T2 orden de produccion
+819,OP-20260929-2,4,15,802,704,98,Piezas con deformacion en horneado,2026-09-29 15:00:00,3,finalizada,SEED-T2 orden de produccion
+820,OP-20260929-3,6,26,124,112,12,Perdida normal de proceso,2026-09-29 05:15:00,3,finalizada,SEED-T2 orden de produccion
+821,OP-20260929-4,5,25,68,62,6,Piezas con deformacion en horneado,2026-09-29 05:45:00,3,finalizada,SEED-T2 orden de produccion
+822,OP-20260930-1,4,15,955,836,119,Piezas con deformacion en horneado,2026-09-30 04:30:00,3,finalizada,SEED-T2 orden de produccion
+823,OP-20260930-2,4,15,766,651,115,Panes quemados en horno,2026-09-30 15:00:00,3,finalizada,SEED-T2 orden de produccion
+824,OP-20260930-3,6,26,146,131,15,Piezas con deformacion en horneado,2026-09-30 05:15:00,3,finalizada,SEED-T2 orden de produccion
+825,OP-20260930-4,5,25,80,67,13,Panes quemados en horno,2026-09-30 05:45:00,3,finalizada,SEED-T2 orden de produccion
+826,OP-20260930-5,7,27,3,2,1,Panes quemados en horno,2026-09-30 09:00:00,3,finalizada,SEED-T2 orden de produccion

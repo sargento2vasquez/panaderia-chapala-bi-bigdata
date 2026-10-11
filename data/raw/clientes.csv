@@ -1,0 +1,7 @@
+id,nombre,documento,telefono,email,direccion,creado_en,activo
+1,Cliente Sin Doc,,,,,2026-07-08 10:02:39,1
+2,Juan Perez,12345678,,,,2026-07-08 10:02:51,1
+7,Panaderia Buen Sabor,20109990001,945100200,compras@buensabor.test,"Av. Brasil 530, Lima",2026-09-14 02:25:45,1
+8,Cafeteria La Esquina,20109990002,945100201,administracion@laesquina.test,"Av. Arequipa 1120, Lima",2026-09-14 02:25:45,1
+9,Hotel Los Portales,20109990003,945100202,eventos@losportales.test,"Jr. Union 410, Lima",2026-09-14 02:25:45,1
+10,Distribuciones El Trigal,20109990004,945100203,pedidos@eltrigal.test,"Av. Canada 700, Lima",2026-09-14 02:25:45,1

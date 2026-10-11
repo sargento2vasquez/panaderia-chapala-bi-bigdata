@@ -1,0 +1,154 @@
+2026-10-11 02:41:11 | INFO    | pipeline | Log en /content/panaderia-chapala-bi-bigdata/logs/pipeline_20261011_024111.log
+2026-10-11 02:41:20 | INFO    | pipeline | Spark 3.5.3 | master=local[*] | UI: http://7dae76063ec1:4040
+2026-10-11 02:41:20 | INFO    | pipeline | Ejecución 20261011_024120 | etapas: ingesta, transformacion, calidad, consultas
+2026-10-11 02:41:20 | INFO    | pipeline | ======================================================================
+2026-10-11 02:41:20 | INFO    | pipeline | ETAPA: INGESTA
+2026-10-11 02:41:20 | INFO    | pipeline | INGESTA (modo=csv) -> /content/panaderia-chapala-bi-bigdata/datalake/bronze
+2026-10-11 02:41:33 | INFO    | pipeline | ingesta                      OK        12.53 s  {'tabla': 'ventas', 'modo': 'csv', 'filas': 7982}
+2026-10-11 02:41:35 | INFO    | pipeline | ingesta                      OK         1.90 s  {'tabla': 'items_venta', 'modo': 'csv', 'filas': 16075}
+2026-10-11 02:41:36 | INFO    | pipeline | ingesta                      OK         1.58 s  {'tabla': 'variantes_producto', 'modo': 'csv', 'filas': 20}
+2026-10-11 02:41:37 | INFO    | pipeline | ingesta                      OK         1.08 s  {'tabla': 'productos', 'modo': 'csv', 'filas': 16}
+2026-10-11 02:41:38 | INFO    | pipeline | ingesta                      OK         0.97 s  {'tabla': 'categorias', 'modo': 'csv', 'filas': 7}
+2026-10-11 02:41:40 | INFO    | pipeline | ingesta                      OK         1.73 s  {'tabla': 'unidades', 'modo': 'csv', 'filas': 7}
+2026-10-11 02:41:42 | INFO    | pipeline | ingesta                      OK         2.37 s  {'tabla': 'clientes', 'modo': 'csv', 'filas': 6}
+2026-10-11 02:41:44 | INFO    | pipeline | ingesta                      OK         1.20 s  {'tabla': 'metodos_pago', 'modo': 'csv', 'filas': 5}
+2026-10-11 02:41:44 | INFO    | pipeline | ingesta                      OK         0.81 s  {'tabla': 'proveedores', 'modo': 'csv', 'filas': 6}
+2026-10-11 02:41:45 | INFO    | pipeline | ingesta                      OK         0.87 s  {'tabla': 'compras', 'modo': 'csv', 'filas': 32}
+2026-10-11 02:41:46 | INFO    | pipeline | ingesta                      OK         1.05 s  {'tabla': 'items_compra', 'modo': 'csv', 'filas': 124}
+2026-10-11 02:41:48 | INFO    | pipeline | ingesta                      OK         1.45 s  {'tabla': 'producciones', 'modo': 'csv', 'filas': 826}
+2026-10-11 02:41:49 | INFO    | pipeline | ingesta                      OK         0.79 s  {'tabla': 'consumo_insumos', 'modo': 'csv', 'filas': 3371}
+2026-10-11 02:41:49 | INFO    | pipeline | ======================================================================
+2026-10-11 02:41:49 | INFO    | pipeline | ETAPA: TRANSFORMACION
+2026-10-11 02:41:49 | INFO    | pipeline | PLATA: tipado y limpieza -> /content/panaderia-chapala-bi-bigdata/datalake/silver
+2026-10-11 02:41:52 | INFO    | pipeline | plata                        OK         3.08 s  {'tabla': 'ventas', 'filas': 7982}
+2026-10-11 02:41:54 | INFO    | pipeline | plata                        OK         2.69 s  {'tabla': 'items_venta', 'filas': 16075}
+2026-10-11 02:41:57 | INFO    | pipeline | plata                        OK         2.14 s  {'tabla': 'variantes_producto', 'filas': 20}
+2026-10-11 02:41:58 | INFO    | pipeline | plata                        OK         1.32 s  {'tabla': 'productos', 'filas': 16}
+2026-10-11 02:41:59 | INFO    | pipeline | plata                        OK         0.89 s  {'tabla': 'categorias', 'filas': 7}
+2026-10-11 02:42:00 | INFO    | pipeline | plata                        OK         0.86 s  {'tabla': 'unidades', 'filas': 7}
+2026-10-11 02:42:01 | INFO    | pipeline | plata                        OK         1.16 s  {'tabla': 'clientes', 'filas': 6}
+2026-10-11 02:42:02 | INFO    | pipeline | plata                        OK         0.77 s  {'tabla': 'metodos_pago', 'filas': 5}
+2026-10-11 02:42:02 | INFO    | pipeline | plata                        OK         0.85 s  {'tabla': 'proveedores', 'filas': 6}
+2026-10-11 02:42:04 | INFO    | pipeline | plata                        OK         1.10 s  {'tabla': 'compras', 'filas': 32}
+2026-10-11 02:42:05 | INFO    | pipeline | plata                        OK         0.97 s  {'tabla': 'items_compra', 'filas': 124}
+2026-10-11 02:42:06 | INFO    | pipeline | plata                        OK         1.11 s  {'tabla': 'producciones', 'filas': 826}
+2026-10-11 02:42:07 | INFO    | pipeline | plata                        OK         1.18 s  {'tabla': 'consumo_insumos', 'filas': 3371}
+2026-10-11 02:42:07 | INFO    | pipeline | ORO: modelo estrella -> /content/panaderia-chapala-bi-bigdata/datalake/gold
+2026-10-11 02:42:14 | INFO    | pipeline | oro                          OK         0.91 s  {'tabla': 'dim_fecha', 'particiones': '', 'filas': 365}
+2026-10-11 02:42:15 | INFO    | pipeline | oro                          OK         1.76 s  {'tabla': 'dim_producto', 'particiones': '', 'filas': 20}
+2026-10-11 02:42:18 | INFO    | pipeline | oro                          OK         2.57 s  {'tabla': 'dim_cliente', 'particiones': '', 'filas': 7}
+2026-10-11 02:42:19 | INFO    | pipeline | oro                          OK         0.77 s  {'tabla': 'dim_metodo_pago', 'particiones': '', 'filas': 6}
+2026-10-11 02:42:19 | INFO    | pipeline | oro                          OK         0.67 s  {'tabla': 'dim_proveedor', 'particiones': '', 'filas': 6}
+2026-10-11 02:42:25 | INFO    | pipeline | oro                          OK         5.44 s  {'tabla': 'fact_ventas', 'particiones': 'anio,mes', 'filas': 16075}
+2026-10-11 02:42:26 | INFO    | pipeline | oro                          OK         1.52 s  {'tabla': 'fact_produccion', 'particiones': 'anio,mes', 'filas': 826}
+2026-10-11 02:42:28 | INFO    | pipeline | oro                          OK         1.79 s  {'tabla': 'fact_compras', 'particiones': 'anio', 'filas': 124}
+2026-10-11 02:42:30 | INFO    | pipeline | oro                          OK         1.47 s  {'tabla': 'fact_consumo_insumos', 'particiones': 'anio,mes', 'filas': 3371}
+2026-10-11 02:42:30 | INFO    | pipeline | ======================================================================
+2026-10-11 02:42:30 | INFO    | pipeline | ETAPA: CALIDAD
+2026-10-11 02:42:34 | INFO    | pipeline |   [OK     ] filas_items_bronce_vs_plata      16075
+2026-10-11 02:42:34 | INFO    | pipeline |   [OK     ] lineas_sin_venta                 0
+2026-10-11 02:42:34 | INFO    | pipeline |   [OK     ] fact_ventas_vs_items             16075
+2026-10-11 02:42:34 | INFO    | pipeline |   [OK     ] ventas_fecha_nula                0
+2026-10-11 02:42:34 | INFO    | pipeline |   [OK     ] importe_negativo                 0
+2026-10-11 02:42:34 | INFO    | pipeline |   [AVISO  ] ventas_total_distinto_lineas     6
+2026-10-11 02:42:34 | INFO    | pipeline |   [AVISO  ] variantes_stock_negativo         6
+2026-10-11 02:42:34 | INFO    | pipeline |   [OK     ] comprobantes_duplicados          0
+2026-10-11 02:42:34 | INFO    | pipeline |   [AVISO  ] ventas_sin_comprobante           9
+2026-10-11 02:42:34 | INFO    | pipeline | calidad                      OK         0.28 s  {}
+2026-10-11 02:42:34 | INFO    | pipeline | Reporte de calidad: /content/panaderia-chapala-bi-bigdata/logs/calidad_20261011_024234.json
+2026-10-11 02:42:34 | INFO    | pipeline | ======================================================================
+2026-10-11 02:42:34 | INFO    | pipeline | ETAPA: CONSULTAS
+2026-10-11 02:42:38 | INFO    | pipeline | consulta                     OK         2.65 s  {'consulta': 'Q1', 'filas': 9}
+2026-10-11 02:42:39 | INFO    | pipeline | Resultado Q1 (primeras filas):
+   (2026, 1, Decimal('202.00'), 2)
+   (2026, 2, Decimal('543.00'), 2)
+   (2026, 3, Decimal('65.00'), 1)
+   (2026, 4, Decimal('30162.04'), 1242)
+   (2026, 5, Decimal('33116.81'), 1354)
+   (2026, 6, Decimal('31289.25'), 1303)
+   (2026, 7, Decimal('31167.74'), 1293)
+   (2026, 8, Decimal('32747.53'), 1320)
+   (2026, 9, Decimal('30996.05'), 1296)
+2026-10-11 02:42:40 | INFO    | pipeline | consulta                     OK         0.72 s  {'consulta': 'Q2', 'filas': 10}
+2026-10-11 02:42:40 | INFO    | pipeline | Resultado Q2 (primeras filas):
+   ('PAN - Pan Frances', Decimal('96463.000'), Decimal('57520.41'))
+   ('Croissant de mantequilla - Unidad clasica', Decimal('7023.000'), Decimal('45366.61'))
+   ('Torta de chocolate familiar - Torta 2 kg', Decimal('447.000'), Decimal('42189.50'))
+   ('Pan de molde integral - Unidad 500 g', Decimal('3939.000'), Decimal('33274.40'))
+   ('YOGURT - YOGURT GRIEGO 500 ML', Decimal('958.000'), Decimal('7139.07'))
+   ('Gaseosa - Botella 500ml', Decimal('1199.000'), Decimal('4169.93'))
+   ('TORTAS - TORTA 3 LECHES', Decimal('15.000'), Decimal('450.00'))
+   ('Pan ciabatta - UND', Decimal('220.000'), Decimal('110.00'))
+   ('Pan Frances - Unidad', Decimal('59.000'), Decimal('29.50'))
+   ('YOGURT - YOGURT DE FRESA 1L', Decimal('2.000'), Decimal('24.00'))
+2026-10-11 02:42:41 | INFO    | pipeline | consulta                     OK         1.27 s  {'consulta': 'Q3', 'filas': 35}
+2026-10-11 02:42:42 | INFO    | pipeline | Resultado Q3 (primeras filas):
+   ('Efectivo', 1, 876, Decimal('10267.71'))
+   ('Efectivo', 2, 931, Decimal('10887.14'))
+   ('Efectivo', 3, 1027, Decimal('12989.35'))
+   ('Efectivo', 4, 1073, Decimal('13515.43'))
+   ('Efectivo', 5, 968, Decimal('11960.08'))
+   ('Efectivo', 6, 1145, Decimal('13447.72'))
+   ('Efectivo', 7, 1204, Decimal('15394.22'))
+   ('Plin', 1, 186, Decimal('2098.04'))
+   ('Plin', 2, 255, Decimal('2958.76'))
+   ('Plin', 3, 288, Decimal('3571.27'))
+   ('Plin', 4, 244, Decimal('3180.51'))
+   ('Plin', 5, 226, Decimal('2825.15'))
+2026-10-11 02:42:43 | INFO    | pipeline | consulta                     OK         1.16 s  {'consulta': 'Q4', 'filas': 3}
+2026-10-11 02:42:44 | INFO    | pipeline | Resultado Q4 (primeras filas):
+   ('Consumidor final', 6114, Decimal('24.23'))
+   ('Empresa', 1364, Decimal('25.25'))
+   ('Persona', 335, Decimal('22.95'))
+2026-10-11 02:42:45 | INFO    | pipeline | consulta                     OK         1.07 s  {'consulta': 'Q5', 'filas': 23}
+2026-10-11 02:42:45 | INFO    | pipeline | Resultado Q5 (primeras filas):
+   (1, 8, Decimal('150.00'), 1)
+   (1, 17, Decimal('52.00'), 2)
+   (2, 11, Decimal('475.00'), 1)
+   (2, 16, Decimal('68.00'), 2)
+   (3, 18, Decimal('65.00'), 1)
+   (4, 6, Decimal('4112.31'), 1)
+   (4, 8, Decimal('3582.40'), 2)
+   (4, 7, Decimal('3368.44'), 3)
+   (5, 7, Decimal('4220.05'), 1)
+   (5, 6, Decimal('4077.59'), 2)
+   (5, 8, Decimal('3986.24'), 3)
+   (6, 8, Decimal('4456.88'), 1)
+2026-10-11 02:42:46 | INFO    | pipeline | consulta                     OK         0.74 s  {'consulta': 'resumen_ventas', 'filas': 1}
+2026-10-11 02:42:47 | INFO    | pipeline | Resultado resumen_ventas (primeras filas):
+   (7813, Decimal('190289.42'), Decimal('24.36'), Decimal('110327.000'))
+2026-10-11 02:42:47 | INFO    | pipeline | consulta                     OK         0.87 s  {'consulta': 'merma_por_producto', 'filas': 7}
+2026-10-11 02:42:48 | INFO    | pipeline | Resultado merma_por_producto (primeras filas):
+   ('Torta de chocolate familiar - Torta 2 kg', 80, Decimal('209.000'), Decimal('80.000'), Decimal('38.28'))
+   ('Pan Frances - Unidad', 2, Decimal('60.000'), Decimal('11.000'), Decimal('18.33'))
+   ('TORTAS - TORTA 3 LECHES', 4, Decimal('14.000'), Decimal('2.000'), Decimal('14.29'))
+   ('Pan de molde integral - Unidad 500 g', 184, Decimal('13528.000'), Decimal('1696.000'), Decimal('12.54'))
+   ('Croissant de mantequilla - Unidad clasica', 184, Decimal('25799.000'), Decimal('3228.000'), Decimal('12.51'))
+   ('PAN - Pan Frances', 368, Decimal('316194.000'), Decimal('39452.000'), Decimal('12.48'))
+   ('Pan ciabatta - UND', 3, Decimal('300.000'), Decimal('22.000'), Decimal('7.33'))
+2026-10-11 02:42:49 | INFO    | pipeline | consulta                     OK         1.04 s  {'consulta': 'compras_por_proveedor', 'filas': 4}
+2026-10-11 02:42:50 | INFO    | pipeline | Resultado compras_por_proveedor (primeras filas):
+   ('Molinos SAC', 10, Decimal('21279.51'))
+   ('Alicorp sac', 10, Decimal('20908.62'))
+   ('Distribuidora Andina de Insumos', 6, Decimal('12996.93'))
+   ('Gloria sac', 1, Decimal('78.00'))
+2026-10-11 02:42:50 | INFO    | pipeline | consulta                     OK         0.48 s  {'consulta': 'stock_critico', 'filas': 6}
+2026-10-11 02:42:51 | INFO    | pipeline | Resultado stock_critico (primeras filas):
+   ('YOGURT - YOGURT GRIEGO 500 ML', 'reventa', Decimal('-955.000'), Decimal('4.000'), 'Negativo')
+   ('Gaseosa - Botella 500ml', 'reventa', Decimal('-663.000'), Decimal('6.000'), 'Negativo')
+   ('Torta de chocolate familiar - Torta 2 kg', 'elaborado', Decimal('-311.000'), Decimal('3.000'), 'Negativo')
+   ('Mantequilla sin sal - Caja 10 kg', 'insumo', Decimal('-252.806'), Decimal('5.000'), 'Negativo')
+   ('Harina - Bolsa 50kg', 'insumo', Decimal('-132.116'), Decimal('3.000'), 'Negativo')
+   ('Harina integral - Saco 25 kg', 'insumo', Decimal('-85.821'), Decimal('10.000'), 'Negativo')
+2026-10-11 02:42:51 | INFO    | pipeline | consulta                     OK         0.76 s  {'consulta': 'particiones_fact_ventas', 'filas': 9}
+2026-10-11 02:42:52 | INFO    | pipeline | Resultado particiones_fact_ventas (primeras filas):
+   (2026, 1, 3)
+   (2026, 2, 2)
+   (2026, 3, 1)
+   (2026, 4, 2517)
+   (2026, 5, 2809)
+   (2026, 6, 2659)
+   (2026, 7, 2651)
+   (2026, 8, 2736)
+   (2026, 9, 2697)
+2026-10-11 02:42:52 | INFO    | pipeline | Pipeline terminado en 91.3 s

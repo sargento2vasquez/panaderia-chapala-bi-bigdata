@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Panaderia_Dashboards"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e5f6c367-9fee-5a6b-a2a7-c1878efe12e7"
+  }
+}

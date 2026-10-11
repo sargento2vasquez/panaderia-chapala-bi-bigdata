@@ -1,0 +1,53 @@
+{
+  "proyecto": "panaderia-chapala",
+  "spark": {
+    "app_name": "PanaderiaChapala-BigData",
+    "master": "local[*]",
+    "config": {
+      "spark.driver.memory": "2g",
+      "spark.sql.shuffle.partitions": "8",
+      "spark.sql.adaptive.enabled": "true",
+      "spark.sql.autoBroadcastJoinThreshold": "10485760",
+      "spark.sql.session.timeZone": "America/Lima",
+      "spark.sql.parquet.compression.codec": "snappy",
+      "spark.eventLog.enabled": "true",
+      "spark.eventLog.dir": "logs/spark-events",
+      "spark.ui.port": "4040"
+    }
+  },
+  "rutas": {
+    "raw": "data/raw",
+    "bronze": "datalake/bronze",
+    "silver": "datalake/silver",
+    "gold": "datalake/gold",
+    "experimento": "datalake/experimento",
+    "salidas": "bigdata/salidas",
+    "logs": "logs",
+    "resultados_experimento": "experimento/resultados"
+  },
+  "ingesta": {
+    "modo": "csv",
+    "tablas": [
+      "ventas", "items_venta", "variantes_producto", "productos", "categorias", "unidades",
+      "clientes", "metodos_pago", "proveedores", "compras", "items_compra", "producciones",
+      "consumo_insumos"
+    ],
+    "jdbc": {
+      "url": "jdbc:sqlserver://localhost:1433;databaseName=panaderia_db;encrypt=false",
+      "usuario": "sa",
+      "password_env": "PANADERIA_SQL_PASSWORD",
+      "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+      "paquete_maven": "com.microsoft.sqlserver:mssql-jdbc:12.6.1.jre11"
+    }
+  },
+  "particionamiento": {
+    "fact_ventas": ["anio", "mes"],
+    "fact_produccion": ["anio", "mes"],
+    "fact_consumo_insumos": ["anio", "mes"],
+    "fact_compras": ["anio"]
+  },
+  "experimento": {
+    "factores_escala": [1, 10, 50],
+    "repeticiones": 3
+  }
+}

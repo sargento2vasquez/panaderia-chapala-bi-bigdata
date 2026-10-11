@@ -1,0 +1,33 @@
+id,proveedor_id,numero_comprobante,fecha,total,estado,observaciones,creado_por
+1,1,F001-0001,2026-07-08 11:28:31,106.5,anulada,Compra de prueba,1
+2,2,G000001,2026-07-09 10:52:13,15,anulada,COMPRA DE PRODUCTOS,1
+3,2,G000002,2026-07-09 10:56:22,78,confirmada,,1
+7,7,F001-0004501,2026-01-08 09:10:00,4900,recibida,Compra mensual de harina y azucar,1
+8,8,F001-0004502,2026-02-12 10:30:00,3420,recibida,Reposicion de mantequilla e insumos,1
+9,9,F001-0004503,2026-03-18 15:20:00,1760,recibida,Envases para campana de temporada,1
+10,3,F001-937923,2026-04-06 08:30:00,1905.8,recibida,SEED-T2 compra semanal de insumos,1
+11,3,F001-886566,2026-04-13 08:30:00,1944.84,recibida,SEED-T2 compra semanal de insumos,1
+12,7,F001-752225,2026-04-20 08:30:00,2173.36,recibida,SEED-T2 compra semanal de insumos,1
+13,3,F001-928365,2026-04-27 08:30:00,1888.19,recibida,SEED-T2 compra semanal de insumos,1
+14,1,F001-482429,2026-05-04 08:30:00,2075.02,recibida,SEED-T2 compra semanal de insumos,1
+15,1,F001-583558,2026-05-11 08:30:00,2212.19,recibida,SEED-T2 compra semanal de insumos,1
+16,7,F001-510456,2026-05-18 08:30:00,2006.26,recibida,SEED-T2 compra semanal de insumos,1
+17,3,F001-669934,2026-05-25 08:30:00,2067.45,recibida,SEED-T2 compra semanal de insumos,1
+18,7,F001-450043,2026-06-01 08:30:00,2377.77,recibida,SEED-T2 compra semanal de insumos,1
+19,1,F001-196196,2026-06-08 08:30:00,2430.15,recibida,SEED-T2 compra semanal de insumos,1
+20,3,F001-140244,2026-06-15 08:30:00,2100.55,recibida,SEED-T2 compra semanal de insumos,1
+21,1,F001-429460,2026-06-22 08:30:00,2162.37,recibida,SEED-T2 compra semanal de insumos,1
+22,7,F001-243995,2026-06-29 08:30:00,2207.14,recibida,SEED-T2 compra semanal de insumos,1
+23,3,F001-604553,2026-07-06 08:30:00,2143.3,recibida,SEED-T2 compra semanal de insumos,1
+24,1,F001-774193,2026-07-13 08:30:00,2145.45,recibida,SEED-T2 compra semanal de insumos,1
+25,3,F001-860587,2026-07-20 08:30:00,2513.64,recibida,SEED-T2 compra semanal de insumos,1
+26,3,F001-111449,2026-07-27 08:30:00,1978.23,recibida,SEED-T2 compra semanal de insumos,1
+27,1,F001-402448,2026-08-03 08:30:00,1944.27,recibida,SEED-T2 compra semanal de insumos,1
+28,1,F001-481478,2026-08-10 08:30:00,1946.38,recibida,SEED-T2 compra semanal de insumos,1
+29,7,F001-369628,2026-08-17 08:30:00,2046.34,recibida,SEED-T2 compra semanal de insumos,1
+30,1,F001-251731,2026-08-24 08:30:00,2153.31,recibida,SEED-T2 compra semanal de insumos,1
+31,7,F001-263766,2026-08-31 08:30:00,2186.06,recibida,SEED-T2 compra semanal de insumos,1
+32,1,F001-505130,2026-09-07 08:30:00,2097.73,recibida,SEED-T2 compra semanal de insumos,1
+33,1,F001-323042,2026-09-14 08:30:00,2112.64,recibida,SEED-T2 compra semanal de insumos,1
+34,3,F001-833075,2026-09-21 08:30:00,2221.96,recibida,SEED-T2 compra semanal de insumos,1
+35,3,F001-370885,2026-09-28 08:30:00,2144.66,recibida,SEED-T2 compra semanal de insumos,1
